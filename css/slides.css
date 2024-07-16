@@ -2637,10 +2637,17 @@ html.mobile .showForMobileInline {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
+.logo-mobile {
+  max-width: 120px;
+}
 .sidebar .logo {
   padding: 0;
   font-size: 0;
   margin-bottom: 35px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 .sidebar .close {
   position: absolute;
