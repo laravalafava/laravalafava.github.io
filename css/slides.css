@@ -7629,14 +7629,14 @@ p.remind-43 {
   line-height: 1.1666;
 }
 
-.price {
+.singleCard {
   font-size: 110px;
   line-height: 1.26;
   margin-bottom: 20px;
   font-weight: 200;
 }
 
-.currency {
+.trofeo {
   font-size: 32px;
   vertical-align: super;
   font-weight: 300;
@@ -7646,6 +7646,32 @@ p.remind-43 {
   opacity: 0.6;
   position: relative;
   top: -0.5em;
+}
+.goldMedal,
+.silverMedal,
+.bronzeMedal {
+  position: relative;
+}
+.goldMedal::before,
+.silverMedal::before,
+.bronzeMedal::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.goldMedal::before {
+  background-image: url('/assets/svg/Gold_Medal.svg');
+}
+.silverMedal::before {
+  background-image: url('/assets/svg/Silver_Medal.svg');
+}
+.bronzeMedal::before {
+  background-image: url('/assets/svg/Bronze_Medal.svg');
 }
 
 .social-circles li {
