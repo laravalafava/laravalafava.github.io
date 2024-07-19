@@ -12360,3 +12360,21 @@ p.remind-43 {
 }
 
 /*# sourceMappingURL=slides.css.map */
+
+        table.classifica {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table.classifica th, table.classifica td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        table.classifica th {
+          background-color: rgb(175 207 255 / 80%);
+          color: #000;
+          font-weight: bold;
+        }
+        table.classifica tr:nth-child(even) {
+          background-color: rgb(0 0 0 / 30%);
+        }
