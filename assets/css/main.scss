@@ -4,12 +4,14 @@
 @import 'components/sidebar';
 @import 'components/slider';
 @import 'components/scrollbar';
+@import 'components/table';
 
 /*= = = = = = = = = = = = = */
 /*= = = = =MAIN = = = = = = */
 /*= = = = = = = = = = = = = */
 
-html, body {
+html,
+body {
     background-color: $dark;
     transition: $normal-transition;
     margin: 0;
@@ -18,19 +20,28 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 img {
     max-width: 100%;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $roboto;
     font-weight: $bold-weight;
     color: $light;
 }
+
 p {
     font-family: $roboto;
     font-weight: $regular-weight;
     color: $light;
 }
+
 main {
     position: relative;
     margin-top: 0;
@@ -40,6 +51,7 @@ main {
         width: 100vw;
         opacity: 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -53,12 +65,64 @@ main {
         * {
             z-index: 2;
         }
-    
-        h1,h2,h3,h4,h5,h6,p {
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &-25,
+                &-33,
+                &-50,
+                &-66,
+                &-75,
+                &-100 {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+
+                    &.direction-horizontal {
+                        display: flex;
+                        flex-direction: row;
+                        overflow-x: auto;
+                        white-space: nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            display: inline-block;
+                            width: 25rem;
+                            height: auto;
+                            padding: 1rem;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }            
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -66,22 +130,125 @@ main {
             left: 0;
             height: 100vh;
             width: 100vw;
-            background-color: rgba(0, 0, 0, 0.5); 
-            z-index: 1;   
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
+
         &.active {
             height: 100vh;
             opacity: 1;
 
-            h1,h2,h3,h4,h5,h6,p {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
                 opacity: 1;
                 transform: translateY(0);
             }
-            &::after {
-            }
-                
+
+            &::after {}
+
         }
     }
 
 }
 
+
+@media (min-width: $tablet) {
+    main {
+        section {
+            .row {
+                .col {
+                    &-25 {
+                        width: 50%;
+                    }
+                    &-33 {
+                        width: 50%;
+                    }
+                    &-50 {
+                        width: 50%;
+                    }
+                    &-66 {
+                        width: 100%;
+                    }
+                    &-75 {
+                        width: 100%;
+                    }
+                    &-100 {
+                        width: 100%;
+                    }
+
+                    &-25,
+                    &-33,
+                    &-50,
+                    &-66,
+                    &-75,
+                    &-100 {
+    
+                        &.direction-horizontal {
+                            img {
+                                
+                            }
+                        }
+                    }
+                }
+            }    
+        }    
+    }
+}
+
+
+@media (min-width: $desktop) {
+    main {
+        section {
+            .row {
+                .col {
+                    &-25 {
+                        width: 25%;
+                    }
+                    &-33 {
+                        width: 33%;
+                    }
+                    &-50 {
+                        width: 50%;
+                    }
+                    &-66 {
+                        width: 66%;
+                    }
+                    &-75 {
+                        width: 75%;
+                    }
+                    &-100 {
+                        width: 100%;
+                    }
+
+                    &-25,
+                    &-33,
+                    &-50,
+                    &-66,
+                    &-75,
+                    &-100 {
+    
+                        &.direction-horizontal {
+                            img {
+                                max-width: 20rem;
+                            }
+                        }
+                    }
+                }
+            }    
+        }    
+    }
+}
+
+
+.mobile {
+    display: flex;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}

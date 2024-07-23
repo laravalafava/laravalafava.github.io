@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: $dark;
+    font-size: $text;
+    font-family: $roboto;
+    font-weight: $light-weight;
+    background-color: rgba(219, 219, 219, 0.99);
+
+    th {
+        h2 {
+            color: $primary;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    td {
+        padding: .3rem .5rem;
+        text-align: center;
+    }
+}

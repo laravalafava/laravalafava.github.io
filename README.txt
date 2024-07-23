@@ -61,3 +61,16 @@ Ora, ogni volta che esegui npm run js, i tuoi file JavaScript saranno concatenat
   font-weight: <weight>;
   font-style: normal;
 }
+
+
+<section>
+  <h1>Campionato</h1>
+  <div class="row">
+    <div class="col-50"></div>
+    <div class="col-50"></div>
+  </div>
+  <div class="row">
+    <div class="col-50"></div>
+    <div class="col-50"></div>
+  </div>
+</section>
