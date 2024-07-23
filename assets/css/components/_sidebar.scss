@@ -1,0 +1,103 @@
+/*= = = = = = = = = = = = = */
+/*= = = = =SIDEBAR= = = = = */
+/*= = = = = = = = = = = = = */
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: -18rem;
+    width: 18rem;
+    height: 100%;
+    background-color: $dark;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right $normal-transition;
+    ;
+    z-index: 1001;
+
+    .offcanvas-content {
+        padding: 2rem;
+
+        .nav-links,
+        .past-years {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 2rem 0;
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-end;           
+
+            li {
+                margin-bottom: 0.8rem;
+
+                a {
+                    text-decoration: none;
+                    color: $light;
+                    font-size: $title;
+
+                    &.disabled {
+                        opacity: 0.9;
+                        cursor: default;
+
+                    }
+                }
+            }
+        }
+
+        .logo {
+            display: flex;
+            align-items: flex-start;
+            width: 4rem;
+            height:4rem;
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 2.5rem;
+            right: 2rem;
+            font-size: $max-title;
+            cursor: pointer;
+            color: $light;
+        }
+
+    }
+
+    &.open {
+        right: 0;
+    }
+
+    // Media query per tablet
+    @media (min-width: $tablet) {
+            .offcanvas-content {                
+                .nav-links {
+                    display: none;
+                    margin: 4rem 0;
+                }
+                .past-years {
+                    margin: 4rem 0;
+                }               
+            }
+    }
+
+    // Media query per desktop
+    @media (min-width: $desktop) {}
+
+}
+
+.offcanvas-overlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: $slow-transition;
+}
+
+.offcanvas.open~.offcanvas-overlay {
+    transition: $slow-transition;
+    display: block;
+    opacity: 1;
+}

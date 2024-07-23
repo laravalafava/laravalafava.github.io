@@ -1,0 +1,114 @@
+/*= = = = = = = = = = = = = */
+/*= = = = =HEADER = = = = = */
+/*= = = = = = = = = = = = = */
+
+header {
+    transition: $normal-transition;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    nav {
+        transition: $normal-transition;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 8rem;
+        padding: 0 2rem;
+        width: 100%;
+        
+        .logo {
+            transition: $normal-transition;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6rem;
+            width: 6rem;
+
+            &.sticky {
+                
+            }
+        }
+
+        .nav-links {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: $text;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: $light;
+                    text-transform: uppercase;
+                    transition: $normal-transition;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .menu-icon {
+            transition: $normal-transition;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4rem;
+            width: 4rem;
+            cursor: pointer;
+        }
+    }
+
+    &.sticky {
+        background-color: $light;
+        
+        nav {
+            height: 6rem;
+
+            .nav-links {
+                li {
+                    a {
+                        color: $dark;
+                    }
+                }
+            }
+
+            .logo {
+                top: 1rem;
+                    height: 4rem;
+                    width: 4rem;
+            }
+
+        }
+        
+    
+        }
+
+    
+
+    // Media query per tablet
+    @media (min-width: $tablet) {
+        nav {
+            .nav-links {
+                display: flex;
+            }
+        }
+    }
+
+    // Media query per desktop
+    @media (min-width: $desktop) {
+    }
+}
