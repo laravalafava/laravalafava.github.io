@@ -268,6 +268,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+html *,
+body * {
+  box-sizing: border-box;
+}
 
 img {
   max-width: 100%;
@@ -309,45 +313,6 @@ main section {
   background-position: center;
   background-repeat: no-repeat;
 }
-main section * {
-  z-index: 2;
-}
-main section .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-main section .row .col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main section .row .col-25, main section .row .col-33, main section .row .col-50, main section .row .col-66, main section .row .col-75, main section .row .col-100 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-main section .row .col-25.direction-horizontal, main section .row .col-33.direction-horizontal, main section .row .col-50.direction-horizontal, main section .row .col-66.direction-horizontal, main section .row .col-75.direction-horizontal, main section .row .col-100.direction-horizontal {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-main section .row .col-25.direction-horizontal img, main section .row .col-33.direction-horizontal img, main section .row .col-50.direction-horizontal img, main section .row .col-66.direction-horizontal img, main section .row .col-75.direction-horizontal img, main section .row .col-100.direction-horizontal img {
-  display: inline-block;
-  width: 25rem;
-  height: auto;
-  padding: 1rem;
-  box-sizing: border-box;
-}
 main section h1,
 main section h2,
 main section h3,
@@ -383,47 +348,56 @@ main section.active p {
   opacity: 1;
   transform: translateY(0);
 }
+main section * {
+  z-index: 2;
+}
+main section .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+main section .row .galleryGiornate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main section .row .galleryGiornate img {
+  flex: 1 0 48%;
+  max-width: 48%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
-  main section .row .col-25 {
-    width: 50%;
-  }
-  main section .row .col-33 {
-    width: 50%;
-  }
-  main section .row .col-50 {
-    width: 50%;
-  }
-  main section .row .col-66 {
+  main section .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
-  main section .row .col-75 {
-    width: 100%;
+  main section .row .galleryGiornate {
+    display: flex;
+    flex-wrap: nowrap;
   }
-  main section .row .col-100 {
-    width: 100%;
+  main section .row .galleryGiornate img {
+    flex: 1 0 25%;
+    max-width: 25%;
+    height: auto;
   }
 }
 @media (min-width: 1366px) {
-  main section .row .col-25 {
-    width: 25%;
-  }
-  main section .row .col-33 {
-    width: 33%;
-  }
-  main section .row .col-50 {
-    width: 50%;
-  }
-  main section .row .col-66 {
-    width: 66%;
-  }
-  main section .row .col-75 {
-    width: 75%;
-  }
-  main section .row .col-100 {
+  main section .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-  }
-  main section .row .col-25.direction-horizontal img, main section .row .col-33.direction-horizontal img, main section .row .col-50.direction-horizontal img, main section .row .col-66.direction-horizontal img, main section .row .col-75.direction-horizontal img, main section .row .col-100.direction-horizontal img {
-    max-width: 20rem;
   }
 }
 .mobile {

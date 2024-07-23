@@ -19,6 +19,10 @@ body {
     font-family: $roboto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 img {
@@ -62,55 +66,6 @@ main {
         background-position: center;
         background-repeat: no-repeat;
 
-        * {
-            z-index: 2;
-        }
-
-        .row {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-
-            .col {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                &-25,
-                &-33,
-                &-50,
-                &-66,
-                &-75,
-                &-100 {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 1rem;
-
-                    &.direction-horizontal {
-                        display: flex;
-                        flex-direction: row;
-                        overflow-x: auto;
-                        white-space: nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        img {
-                            display: inline-block;
-                            width: 25rem;
-                            height: auto;
-                            padding: 1rem;
-                            box-sizing: border-box;
-                        }
-                    }
-                }
-            }            
-        }
-
         h1,
         h2,
         h3,
@@ -152,8 +107,35 @@ main {
             &::after {}
 
         }
-    }
 
+        * {
+            z-index: 2;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1rem;
+            flex-wrap: wrap;
+            
+            .galleryGiornate {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                img {
+                    flex: 1 0 48%;
+                    max-width: 48%;
+                    height: auto;
+                  }
+            }
+        }
+    }
 }
 
 
@@ -161,39 +143,21 @@ main {
     main {
         section {
             .row {
-                .col {
-                    &-25 {
-                        width: 50%;
-                    }
-                    &-33 {
-                        width: 50%;
-                    }
-                    &-50 {
-                        width: 50%;
-                    }
-                    &-66 {
-                        width: 100%;
-                    }
-                    &-75 {
-                        width: 100%;
-                    }
-                    &-100 {
-                        width: 100%;
-                    }
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
 
-                    &-25,
-                    &-33,
-                    &-50,
-                    &-66,
-                    &-75,
-                    &-100 {
+                .galleryGiornate {
+                    display: flex;
+                    flex-wrap: nowrap;
     
-                        &.direction-horizontal {
-                            img {
-                                
-                            }
-                        }
-                    }
+                    img {
+                        flex: 1 0 25%;
+                        max-width: 25%;
+                        height: auto;
+                      }
                 }
             }    
         }    
@@ -205,40 +169,13 @@ main {
     main {
         section {
             .row {
-                .col {
-                    &-25 {
-                        width: 25%;
-                    }
-                    &-33 {
-                        width: 33%;
-                    }
-                    &-50 {
-                        width: 50%;
-                    }
-                    &-66 {
-                        width: 66%;
-                    }
-                    &-75 {
-                        width: 75%;
-                    }
-                    &-100 {
-                        width: 100%;
-                    }
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
 
-                    &-25,
-                    &-33,
-                    &-50,
-                    &-66,
-                    &-75,
-                    &-100 {
-    
-                        &.direction-horizontal {
-                            img {
-                                max-width: 20rem;
-                            }
-                        }
-                    }
-                }
+                .galleryGiornate {}
             }    
         }    
     }
