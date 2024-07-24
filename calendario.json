@@ -1,0 +1,960 @@
+{
+    "giornate": [
+      {
+        "giornata": 1,
+        "partite": [
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 67.5,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65.5,
+            "squadra_trasferta": "Real Gurgugnao"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 77.5,
+            "gol_casa": 2,
+            "gol_trasferta": 3,
+            "punti_trasferta": 80,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 68,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68,
+            "squadra_trasferta": "YOUNG BOY"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 67.5,
+            "gol_casa": 1,
+            "gol_trasferta": 3,
+            "punti_trasferta": 81.5,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 84.5,
+            "gol_casa": 4,
+            "gol_trasferta": 2,
+            "punti_trasferta": 74,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 80.5,
+            "gol_casa": 3,
+            "gol_trasferta": 1,
+            "punti_trasferta": 71,
+            "squadra_trasferta": "Ajajax Brazorf"
+          }
+        ]
+      },
+      {
+        "giornata": 2,
+        "partite": [
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 67.5,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73.5,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 78.5,
+            "gol_casa": 3,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73.5,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 66.5,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 77.5,
+            "squadra_trasferta": "Atletico Terronya"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 65,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 66,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 64,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 59.5,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Montescarsini"
+          }
+        ]
+      },
+      {
+        "giornata": 3,
+        "partite": [
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 60.5,
+            "gol_casa": 0,
+            "gol_trasferta": 3,
+            "punti_trasferta": 78.5,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 65,
+            "gol_casa": 0,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72.5,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 73,
+            "gol_casa": 2,
+            "gol_trasferta": 0,
+            "punti_trasferta": 64.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 69,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69,
+            "squadra_trasferta": "Real Gurgugnao"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 65.5,
+            "gol_casa": 0,
+            "gol_trasferta": 2,
+            "punti_trasferta": 74.5,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 81.5,
+            "gol_casa": 3,
+            "gol_trasferta": 1,
+            "punti_trasferta": 70,
+            "squadra_trasferta": "HannAver 23"
+          }
+        ]
+      },
+      {
+        "giornata": 4,
+        "partite": [
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 66.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69.5,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 71,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 67,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 69,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69,
+            "squadra_trasferta": "YOUNG BOY"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 61.5,
+            "gol_casa": 0,
+            "gol_trasferta": 4,
+            "punti_trasferta": 86,
+            "squadra_trasferta": "Montescarsini"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 80.5,
+            "gol_casa": 3,
+            "gol_trasferta": 2,
+            "punti_trasferta": 75.5,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 85,
+            "gol_casa": 4,
+            "gol_trasferta": 1,
+            "punti_trasferta": 71,
+            "squadra_trasferta": "Atletico Terronya"
+          }
+        ]
+      },
+      {
+        "giornata": 5,
+        "partite": [
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 65.5,
+            "gol_casa": 0,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73.5,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 62.5,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 60,
+            "squadra_trasferta": "Real Gurgugnao"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 77.5,
+            "gol_casa": 2,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 80.5,
+            "gol_casa": 3,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 76,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 76.5,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 72.5,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          }
+        ]
+      },
+      {
+        "giornata": 6,
+        "partite": [
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 66,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65.5,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 71,
+            "gol_casa": 1,
+            "gol_trasferta": 3,
+            "punti_trasferta": 78,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 70,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69,
+            "squadra_trasferta": "Atletico Terronya"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 65,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 62.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 71,
+            "gol_casa": 1,
+            "gol_trasferta": 4,
+            "punti_trasferta": 86,
+            "squadra_trasferta": "YOUNG BOY"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 75.5,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Montescarsini"
+          }
+        ]
+      },
+      {
+        "giornata": 7,
+        "partite": [
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 66.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 70,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 79.5,
+            "gol_casa": 3,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 69.5,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 74.5,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 77,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 69,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 66.5,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 75.5,
+            "gol_casa": 2,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65,
+            "squadra_trasferta": "Real Gurgugnao"
+          }
+        ]
+      },
+      {
+        "giornata": 8,
+        "partite": [
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 67,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65,
+            "squadra_trasferta": "Atletico Terronya"
+          },
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 73.5,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72,
+            "squadra_trasferta": "YOUNG BOY"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 77,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 67.5,
+            "squadra_trasferta": "Montescarsini"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 73,
+            "gol_casa": 2,
+            "gol_trasferta": 3,
+            "punti_trasferta": 80,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 66.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 70.5,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 61.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          }
+        ]
+      },
+      {
+        "giornata": 9,
+        "partite": [
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 75.5,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 66,
+            "gol_casa": 1,
+            "gol_trasferta": 4,
+            "punti_trasferta": 84.5,
+            "squadra_trasferta": "Atletico Terronya"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 62.5,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 63.5,
+            "squadra_trasferta": "Real Gurgugnao"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 67,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 70,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 64,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 67,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 70.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69,
+            "squadra_trasferta": "Ambrosiana 1908"
+          }
+        ]
+      },
+      {
+        "giornata": 10,
+        "partite": [
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 74,
+            "gol_casa": 2,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65.5,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 72,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 76.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 69,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69.5,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 64,
+            "gol_casa": 0,
+            "gol_trasferta": 2,
+            "punti_trasferta": 76,
+            "squadra_trasferta": "YOUNG BOY"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 66,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 71,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 66,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Montescarsini"
+          }
+        ]
+      },
+      {
+        "giornata": 11,
+        "partite": [
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 72,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69,
+            "squadra_trasferta": "Real Gurgugnao"
+          },
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 86.5,
+            "gol_casa": 4,
+            "gol_trasferta": 0,
+            "punti_trasferta": 64,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 63.5,
+            "gol_casa": 0,
+            "gol_trasferta": 2,
+            "punti_trasferta": 75,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 76,
+            "gol_casa": 2,
+            "gol_trasferta": 3,
+            "punti_trasferta": 78,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 73.5,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 66.5,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 76.5,
+            "squadra_trasferta": "Atletico Terronya"
+          }
+        ]
+      },
+      {
+        "giornata": 12,
+        "partite": [
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 64,
+            "gol_casa": 0,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 76,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72.5,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 65.5,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 67.5,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 67,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 67,
+            "squadra_trasferta": "Montescarsini"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 69.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 66,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 70,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 75,
+            "squadra_trasferta": "Atletico Terronya"
+          }
+        ]
+      },
+      {
+        "giornata": 13,
+        "partite": [
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 70.5,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 76.5,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 81.5,
+            "gol_casa": 3,
+            "gol_trasferta": 2,
+            "punti_trasferta": 77,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 66,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 64.5,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 64.5,
+            "gol_casa": 0,
+            "gol_trasferta": 3,
+            "punti_trasferta": 78,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 65.5,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68,
+            "squadra_trasferta": "Real Gurgugnao"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 71.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "YOUNG BOY"
+          }
+        ]
+      },
+      {
+        "giornata": 14,
+        "partite": [
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 65.5,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 71,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 62.5,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 63.5,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 80,
+            "gol_casa": 3,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68,
+            "squadra_trasferta": "Montescarsini"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 63,
+            "gol_casa": 0,
+            "gol_trasferta": 3,
+            "punti_trasferta": 78,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 73,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 67,
+            "squadra_trasferta": "Atletico Terronya"
+          },
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 69.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69.5,
+            "squadra_trasferta": "YOUNG BOY"
+          }
+        ]
+      },
+      {
+        "giornata": 15,
+        "partite": [
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 60.5,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 64,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 66.5,
+            "gol_casa": 1,
+            "gol_trasferta": 2,
+            "punti_trasferta": 73.5,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 73,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 68,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 77,
+            "gol_casa": 2,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65.5,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 61,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65.5,
+            "squadra_trasferta": "Real Gurgugnao"
+          }
+        ]
+      },
+      {
+        "giornata": 16,
+        "partite": [
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 68.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 71.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 73,
+            "gol_casa": 2,
+            "gol_trasferta": 0,
+            "punti_trasferta": 60,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 78.5,
+            "gol_casa": 3,
+            "gol_trasferta": 1,
+            "punti_trasferta": 66.5,
+            "squadra_trasferta": "Montescarsini"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 73.5,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 69,
+            "squadra_trasferta": "Montrappoli United"
+          },
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 70.5,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 59.5,
+            "squadra_trasferta": "Atletico Terronya"
+          },
+          {
+            "squadra_casa": "FC Bahhhhhhh",
+            "punti_casa": 60.5,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "YOUNG BOY"
+          }
+        ]
+      },
+      {
+        "giornata": 17,
+        "partite": [
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 85.5,
+            "gol_casa": 4,
+            "gol_trasferta": 3,
+            "punti_trasferta": 78.5,
+            "squadra_trasferta": "HannAver 23"
+          },
+          {
+            "squadra_casa": "Real Madrink",
+            "punti_casa": 77.5,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 70,
+            "squadra_trasferta": "Armandillo FC"
+          },
+          {
+            "squadra_casa": "Atletico Terronya",
+            "punti_casa": 73,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 72,
+            "squadra_trasferta": "Ambrosiana 1908"
+          },
+          {
+            "squadra_casa": "Ajajax Brazorf",
+            "punti_casa": 64,
+            "gol_casa": 0,
+            "gol_trasferta": 0,
+            "punti_trasferta": 62.5,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "YOUNG BOY",
+            "punti_casa": 71,
+            "gol_casa": 1,
+            "gol_trasferta": 3,
+            "punti_trasferta": 79.5,
+            "squadra_trasferta": "Leptis Magna"
+          },
+          {
+            "squadra_casa": "Montescarsini",
+            "punti_casa": 81.5,
+            "gol_casa": 3,
+            "gol_trasferta": 4,
+            "punti_trasferta": 85,
+            "squadra_trasferta": "Real Gurgugnao"
+          }
+        ]
+      },
+      {
+        "giornata": 18,
+        "partite": [
+          {
+            "squadra_casa": "Leptis Magna",
+            "punti_casa": 73.5,
+            "gol_casa": 2,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Ajajax Brazorf"
+          },
+          {
+            "squadra_casa": "Ambrosiana 1908",
+            "punti_casa": 64,
+            "gol_casa": 0,
+            "gol_trasferta": 1,
+            "punti_trasferta": 68.5,
+            "squadra_trasferta": "Real Madrink"
+          },
+          {
+            "squadra_casa": "Real Gurgugnao",
+            "punti_casa": 68.5,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 65.5,
+            "squadra_trasferta": "Montescarsini"
+          },
+          {
+            "squadra_casa": "Montrappoli United",
+            "punti_casa": 69.5,
+            "gol_casa": 1,
+            "gol_trasferta": 1,
+            "punti_trasferta": 66,
+            "squadra_trasferta": "FC Bahhhhhhh"
+          },
+          {
+            "squadra_casa": "Armandillo FC",
+            "punti_casa": 73.5,
+            "gol_casa": 2,
+            "gol_trasferta": 2,
+            "punti_trasferta": 70,
+            "squadra_trasferta": "YOUNG BOY"
+          },
+          {
+            "squadra_casa": "HannAver 23",
+            "punti_casa": 68,
+            "gol_casa": 1,
+            "gol_trasferta": 0,
+            "punti_trasferta": 63,
+            "squadra_trasferta": "Atletico Terronya"
+          }
+        ]
+      }
+    ]
+  }
+  
+
