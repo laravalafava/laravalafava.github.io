@@ -255,6 +255,60 @@ table td {
   text-align: center;
 }
 
+main section .row .gallerySquadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main section .row .gallerySquadre .rosa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .row .gallerySquadre .dettaglio {
+  display: flex;
+  flex-direction: column;
+}
+main section .row .gallerySquadre .dettaglio .logo {
+  width: 15rem;
+  margin: 0 auto;
+}
+main section .row .galleryGiornate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main section .row .galleryGiornate img {
+  flex: 1 0 48%;
+  max-width: 48%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  main section .row .gallerySquadre {
+    display: flex;
+    flex-direction: row;
+  }
+  main section .row .gallerySquadre .dettaglio {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .row .gallerySquadre .dettaglio .logo {
+    max-height: 20rem;
+  }
+  main section .row .galleryGiornate {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  main section .row .galleryGiornate img {
+    flex: 1 0 25%;
+    max-width: 25%;
+    height: auto;
+  }
+}
 /*= = = = = = = = = = = = = */
 /*= = = = =MAIN = = = = = = */
 /*= = = = = = = = = = = = = */
@@ -361,17 +415,6 @@ main section .row {
   padding: 1rem;
   flex-wrap: wrap;
 }
-main section .row .galleryGiornate {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-main section .row .galleryGiornate img {
-  flex: 1 0 48%;
-  max-width: 48%;
-  height: auto;
-}
 
 @media (min-width: 768px) {
   main section .row {
@@ -380,15 +423,6 @@ main section .row .galleryGiornate img {
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-  main section .row .galleryGiornate {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  main section .row .galleryGiornate img {
-    flex: 1 0 25%;
-    max-width: 25%;
-    height: auto;
   }
 }
 @media (min-width: 1366px) {

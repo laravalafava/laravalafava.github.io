@@ -5,6 +5,7 @@
 @import 'components/slider';
 @import 'components/scrollbar';
 @import 'components/table';
+@import 'components/gallery';
 
 /*= = = = = = = = = = = = = */
 /*= = = = =MAIN = = = = = = */
@@ -121,19 +122,6 @@ main {
             box-sizing: border-box;
             padding: 1rem;
             flex-wrap: wrap;
-            
-            .galleryGiornate {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
-
-                img {
-                    flex: 1 0 48%;
-                    max-width: 48%;
-                    height: auto;
-                  }
-            }
         }
     }
 }
@@ -148,17 +136,6 @@ main {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-
-                .galleryGiornate {
-                    display: flex;
-                    flex-wrap: nowrap;
-    
-                    img {
-                        flex: 1 0 25%;
-                        max-width: 25%;
-                        height: auto;
-                      }
-                }
             }    
         }    
     }
@@ -174,8 +151,6 @@ main {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-
-                .galleryGiornate {}
             }    
         }    
     }

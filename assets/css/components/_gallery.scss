@@ -1,0 +1,82 @@
+main {
+    section {
+        .row {
+            .gallerySquadre {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .rosa {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .dettaglio {
+                    display: flex;
+                    flex-direction: column;
+                    .logo {
+                        width: 15rem;
+                        margin: 0 auto;
+                    }
+                    .descrizione {
+                        
+                    }
+                }
+            }
+            .galleryGiornate {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                img {
+                    flex: 1 0 48%;
+                    max-width: 48%;
+                    height: auto;
+                  }
+            }            
+        }
+     }
+}
+@media (min-width: $tablet) {
+    main {
+        section {
+            .row {
+                .gallerySquadre {
+                    display: flex;
+                    flex-direction: row;
+                    .rosa {}
+                    .dettaglio {
+                        display: flex;
+                        flex-direction: column;
+                        .logo {
+                            max-height: 20rem;
+                        }
+                        .descrizione {}
+                    }
+                }
+                .galleryGiornate {
+                    display: flex;
+                    flex-wrap: nowrap;
+    
+                    img {
+                        flex: 1 0 25%;
+                        max-width: 25%;
+                        height: auto;
+                      }
+                }
+            }    
+        }    
+    }
+}
+@media (min-width: $desktop) {
+    main {
+        section {
+            .row {
+                .gallerySquadre {}
+                .galleryGiornate {}
+            }    
+        }    
+    }
+}
