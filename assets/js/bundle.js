@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 /*= = = = =SIDEBAR= = = = = */
 /*= = = = = = = = = = = = = */
 
-// assets/js/components/offcanvas-menu.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menuIcon');
     const offcanvasMenu = document.getElementById('offcanvasMenu');
@@ -61,6 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.addEventListener('click', toggleOffcanvas);
     closeIcon.addEventListener('click', closeOffcanvas);
     overlay.addEventListener('click', closeOffcanvas);
+
+    // Aggiungi event listener per ciascun link del menu
+    const menuLinks = offcanvasMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeOffcanvas);
+    });
 });
 
 /*= = = = = = = = = = = = = */
@@ -68,12 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
 /*= = = = = = = = = = = = = */
 
 // assets/js/components/scroll-sections.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
     let currentSectionIndex = 0;
     let isScrolling = false;
+
+    const mediaQuery = window.matchMedia('(min-width: 992px)');
 
     function activateSection(index) {
         sections.forEach((section, i) => {
@@ -119,15 +124,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', handleNavLinkClick);
-    });
+    function initializeScrollFeatures() {
+        if (mediaQuery.matches) {
+            navLinks.forEach(link => {
+                link.addEventListener('click', handleNavLinkClick);
+            });
 
-    window.addEventListener('wheel', handleScroll);
-    window.addEventListener('keydown', handleKeydown);
+            window.addEventListener('wheel', handleScroll);
+            window.addEventListener('keydown', handleKeydown);
 
-    // Initialize the first section as active
-    activateSection(currentSectionIndex);
+            // Initialize the first section as active
+            activateSection(currentSectionIndex);
+        } else {
+            navLinks.forEach(link => {
+                link.removeEventListener('click', handleNavLinkClick);
+            });
+
+            window.removeEventListener('wheel', handleScroll);
+            window.removeEventListener('keydown', handleKeydown);
+        }
+    }
+
+    // Initial check
+    initializeScrollFeatures();
+
+    // Listen for changes in screen size
+    mediaQuery.addEventListener('change', initializeScrollFeatures);
 });
 
 /*= = = = = = = = = = = = = */

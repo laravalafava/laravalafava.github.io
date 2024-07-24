@@ -88,7 +88,9 @@ header {
     }
 
     &.sticky {
-        background-color: $light;
+        background-color: $dark;
+        position: fixed;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         
         nav {
             height: 6rem;
@@ -135,5 +137,8 @@ header {
 
     // Media query per desktop
     @media (min-width: $desktop) {
+        &.sticky {
+            position: relative;
+        }
     }
 }

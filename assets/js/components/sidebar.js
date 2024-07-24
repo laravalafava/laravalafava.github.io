@@ -2,8 +2,6 @@
 /*= = = = =SIDEBAR= = = = = */
 /*= = = = = = = = = = = = = */
 
-// assets/js/components/offcanvas-menu.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menuIcon');
     const offcanvasMenu = document.getElementById('offcanvasMenu');
@@ -25,4 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.addEventListener('click', toggleOffcanvas);
     closeIcon.addEventListener('click', closeOffcanvas);
     overlay.addEventListener('click', closeOffcanvas);
+
+    // Aggiungi event listener per ciascun link del menu
+    const menuLinks = offcanvasMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeOffcanvas);
+    });
 });

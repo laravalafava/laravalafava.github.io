@@ -1,10 +1,11 @@
 // assets/js/components/scroll-sections.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
     let currentSectionIndex = 0;
     let isScrolling = false;
+
+    const mediaQuery = window.matchMedia('(min-width: 992px)');
 
     function activateSection(index) {
         sections.forEach((section, i) => {
@@ -50,13 +51,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', handleNavLinkClick);
-    });
+    function initializeScrollFeatures() {
+        if (mediaQuery.matches) {
+            navLinks.forEach(link => {
+                link.addEventListener('click', handleNavLinkClick);
+            });
 
-    window.addEventListener('wheel', handleScroll);
-    window.addEventListener('keydown', handleKeydown);
+            window.addEventListener('wheel', handleScroll);
+            window.addEventListener('keydown', handleKeydown);
 
-    // Initialize the first section as active
-    activateSection(currentSectionIndex);
+            // Initialize the first section as active
+            activateSection(currentSectionIndex);
+        } else {
+            navLinks.forEach(link => {
+                link.removeEventListener('click', handleNavLinkClick);
+            });
+
+            window.removeEventListener('wheel', handleScroll);
+            window.removeEventListener('keydown', handleKeydown);
+        }
+    }
+
+    // Initial check
+    initializeScrollFeatures();
+
+    // Listen for changes in screen size
+    mediaQuery.addEventListener('change', initializeScrollFeatures);
 });

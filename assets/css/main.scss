@@ -6,6 +6,7 @@
 @import 'components/scrollbar';
 @import 'components/table';
 @import 'components/gallery';
+@import 'components/text';
 
 /*= = = = = = = = = = = = = */
 /*= = = = =MAIN = = = = = = */
@@ -52,9 +53,9 @@ main {
     margin-top: 0;
 
     section {
-        height: 0vh;
+        min-height: 1080px;
         width: 100vw;
-        opacity: 0;
+        opacity: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -65,48 +66,17 @@ main {
 
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-        }
+        background-repeat: no-repeat;        
 
         &::after {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
-            height: 100vh;
+            height: 100%;
             width: 100vw;
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
-        }
-
-        &.active {
-            height: 100vh;
-            opacity: 1;
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            &::after {}
-
         }
 
         * {
@@ -145,6 +115,36 @@ main {
 @media (min-width: $desktop) {
     main {
         section {
+            height: 0vh;
+            opacity: 0;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            }
+            &.active {
+                height: 100vh;
+                opacity: 1;
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            &::after {
+                height: 100vh;
+            }
             .row {
                 display: flex;
                 flex-direction: row;
@@ -156,7 +156,15 @@ main {
     }
 }
 
-
+.minilogo {
+    width: 10rem;
+    @media (min-width: $tablet) {
+        width: 12.5rem;
+    }
+    @media (min-width: $desktop) {
+        width: 15rem;
+    }
+}
 .mobile {
     display: flex;
 
