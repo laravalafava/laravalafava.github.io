@@ -1,9 +1,12 @@
 main {
     section {
         .row {
+            .classificaCampionato {
+                
+            }
             .gallerySquadre {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 .rosa {
@@ -11,6 +14,7 @@ main {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    text-align: center;
                 }
                 .dettaglio {
                     display: flex;
@@ -20,7 +24,11 @@ main {
                         margin: 0 auto;
                     }
                     .descrizione {
-                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
             }

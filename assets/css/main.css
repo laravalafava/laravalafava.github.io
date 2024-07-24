@@ -265,7 +265,7 @@ table td {
 
 main section .row .gallerySquadre {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -274,6 +274,7 @@ main section .row .gallerySquadre .rosa {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 main section .row .gallerySquadre .dettaglio {
   display: flex;
@@ -282,6 +283,13 @@ main section .row .gallerySquadre .dettaglio {
 main section .row .gallerySquadre .dettaglio .logo {
   width: 15rem;
   margin: 0 auto;
+}
+main section .row .gallerySquadre .dettaglio .descrizione {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 main section .row .galleryGiornate {
   display: flex;
