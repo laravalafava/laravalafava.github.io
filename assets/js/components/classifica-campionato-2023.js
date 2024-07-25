@@ -1,63 +1,11 @@
-<div id="calendar"></div>
+/*= = = = = = = = = = = = = */
+/*= = =CLASSIFICA 2023= = = */
+/*= = = = = = = = = = = = = */
 
-<style>
-#calendar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  width: 100%;
-}
-.table-container {
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.table-container h2 {
-  margin: 0;
-  padding: 10px;
-  background-color: #f2f2f2;
-  cursor: pointer;
-  text-align: center;
-}
-
-.table-wrapper {
-  display: none; /* Nasconde le tabelle inizialmente */
-  padding: 10px;
-}
-
-.table-wrapper.active {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  overflow-x: scroll;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 1px solid black;
-}
-
-th, td {
-  padding: 8px;
-  text-align: center;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-</style>
-
-<script>
+let previousClassifica = []; 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('calendario.json')
+  let previousClassifica = []; 
+  fetch('./assets/data/2023/classifica-campionato-2023.json')
     .then(response => response.json())
     .then(data => {
       data.giornate.forEach((giornata, index) => {
@@ -75,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function generateTable(giornata, giornataIndex, tutteGiornate) {
-  const calendarDiv = document.getElementById('calendar');
+  const calendarDiv = document.getElementById('classificaCampionato2023');
   
   const tableContainer = document.createElement('div');
   tableContainer.classList.add('table-container');
@@ -88,13 +36,16 @@ function generateTable(giornata, giornataIndex, tutteGiornate) {
   tableWrapper.classList.add('table-wrapper');
   
   const partiteTable = createPartiteTable(giornata);
-  const classificaTable = createClassificaTable(tutteGiornate.slice(0, giornataIndex));
+  const classificaTable = createClassificaTable(tutteGiornate.slice(0, giornataIndex), previousClassifica);
   
   tableWrapper.appendChild(partiteTable);
   tableWrapper.appendChild(classificaTable);
   
   tableContainer.appendChild(tableWrapper);
   calendarDiv.appendChild(tableContainer);
+  
+  // Aggiorna la classifica precedente
+  previousClassifica = calculateClassifica(tutteGiornate.slice(0, giornataIndex));
 }
 
 function toggleAccordion(heading) {
@@ -116,7 +67,7 @@ function createPartiteTable(giornata) {
   const table = document.createElement('table');
   
   const headerRow = document.createElement('tr');
-  const headers = ['Squadra Casa', 'Punti Casa', 'Gol Casa', 'Gol Trasferta', 'Punti Trasferta', 'Squadra Trasferta'];
+  const headers = ['Sq. Casa', 'Pt.', 'Gol Casa', 'Gol Trasf.', 'Pt.', 'Sq. Trasf.'];
   headers.forEach(headerText => {
     const th = document.createElement('th');
     th.textContent = headerText;
@@ -157,7 +108,7 @@ function createPartiteTable(giornata) {
   return table;
 }
 
-function createClassificaTable(giornate) {
+function createClassificaTable(giornate, previousClassifica = []) {
   const classifica = calculateClassifica(giornate);
   
   const table = document.createElement('table');
@@ -217,6 +168,20 @@ function createClassificaTable(giornate) {
     const cellPtTotali = document.createElement('td');
     cellPtTotali.textContent = squadra.punti_totali;
     row.appendChild(cellPtTotali);
+    
+    if (previousClassifica.length > 0) {
+      const previousIndex = previousClassifica.findIndex(prevSquadra => prevSquadra.nome === squadra.nome);
+      if (previousIndex !== -1) {
+        if (previousIndex < index) {
+          row.style.backgroundColor = 'rgb(240 128 128 / 50%)'; // Discesa
+          row.classList.add('growDown');
+        } else if (previousIndex > index) {
+          row.style.backgroundColor = 'rgb(144 238 144 / 50%)'; // Salita
+          row.classList.add('growUp');
+        }
+      }
+    }
+    
     
     table.appendChild(row);
   });
@@ -281,5 +246,3 @@ function updateTeamStats(team, punti, golFatti, golSubiti) {
   team.differenza_reti = team.gol_fatti - team.gol_subiti;
   team.punti_totali += punti;
 }
-
-</script>

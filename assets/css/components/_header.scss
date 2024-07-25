@@ -22,7 +22,7 @@ header {
         height: 6rem;
         padding: 0 1rem;
         width: 100%;
-        
+
         .logo {
             transition: $normal-transition;
             display: flex;
@@ -31,9 +31,7 @@ header {
             height: 4.5rem;
             width: 4.5rem;
 
-            &.sticky {
-                
-            }
+            &.sticky {}
         }
 
         .nav-links {
@@ -59,7 +57,6 @@ header {
                     }
                 }
             }
-            
         }
 
         .menu-icon {
@@ -70,11 +67,12 @@ header {
             height: 4.5rem;
             width: 4.5rem;
             cursor: pointer;
-            
+
             @keyframes rotate360 {
                 from {
                     transform: rotate(0deg);
                 }
+
                 to {
                     transform: rotate(360deg);
                 }
@@ -82,7 +80,7 @@ header {
 
             img {
                 height: 100%;
-                animation: rotate360 25s linear infinite;   
+                animation: rotate360 25s linear infinite;
             }
         }
     }
@@ -91,43 +89,37 @@ header {
         background-color: $dark;
         position: fixed;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        
+
         nav {
             height: 6rem;
 
             .nav-links {
                 li {
                     a {
-                        color: $dark;
+                        color: $light;
                     }
                 }
             }
-
-            .logo {
-                top: 1rem;
-                    height: 4rem;
-                    width: 4rem;
-            }
-
         }
-        
-    
-        }
+    }
 
-    
+
 
     // Media query per tablet
     @media (min-width: $tablet) {
         nav {
             padding: 0 2rem;
-            height: 8rem;
+            height: 6rem;
+
             .logo {
                 height: 5rem;
                 width: 5rem;
             }
+
             .nav-links {
                 display: flex;
             }
+
             .menu-icon {
                 height: 5rem;
                 width: 5rem;
@@ -135,10 +127,7 @@ header {
         }
     }
 
-    // Media query per desktop
-    @media (min-width: $desktop) {
-        &.sticky {
-            position: relative;
-        }
-    }
+    @media (min-width: $desktop) {}
+    
 }
+

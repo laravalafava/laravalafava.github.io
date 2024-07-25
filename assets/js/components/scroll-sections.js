@@ -1,4 +1,4 @@
-// assets/js/components/scroll-sections.js
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections[index].scrollIntoView({ behavior: 'smooth' });
         activateSection(index);
         currentSectionIndex = index;
-        setTimeout(() => isScrolling = false, 1000); // Debounce to avoid rapid triggering
+        setTimeout(() => isScrolling = false, 1000);
     }
 
     function handleNavLinkClick(event) {
@@ -72,9 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Initial check
     initializeScrollFeatures();
-
-    // Listen for changes in screen size
+    
     mediaQuery.addEventListener('change', initializeScrollFeatures);
 });
+*/

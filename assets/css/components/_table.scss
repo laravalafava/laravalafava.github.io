@@ -1,23 +1,89 @@
-table {
+.classifica {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .5rem;
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    color: $dark;
-    font-size: $text;
-    font-family: $roboto;
-    font-weight: $light-weight;
-    background-color: rgba(219, 219, 219, 0.99);
 
-    th {
+    .table-container {
+        margin-bottom: 1.5rem;
+        border: 0.05rem solid $light;
+        border-radius: .25rem;
+        overflow: hidden;
+        box-sizing: border-box;
+
         h2 {
-            color: $primary;
             margin: 0;
-            padding: 0;
+            padding: .5rem;
+            color: $light;
+            cursor: pointer;
+            text-align: center;
         }
-    }
 
-    td {
-        padding: .3rem .5rem;
-        text-align: center;
+        .table-wrapper {
+            display: none;
+            padding: .5rem;
+
+            &.active {
+                display: flex;
+                justify-content: space-between;
+                gap: 1.5rem;
+                overflow-x: scroll;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: rgba(0, 0, 0, 0.5);
+
+                th {
+                    background-color: rgba(255, 255, 255, 0.4);
+                }
+
+                th,
+                td {
+                    padding: 8px;
+                    text-align: center;
+                }
+                tr {
+                    position: relative;
+                }
+                .growUp {
+                    background-color: rgba(144, 238, 144, 0.5);
+                    &::after {
+                        content: " ";
+                        background-image: url('/assets/img/icons/arrow_up_green.svg');
+                        background-position: center;
+                        background-repeat: no-repeat; 
+                        color: lightgreen;
+                        position: absolute;
+                        left: .5rem;
+                        top: .5rem;
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                }
+                .growDown {
+                    background-color: rgba(240, 128, 128, 0.5);
+                    &::after {
+                        content: " ";
+                        background-image: url('/assets/img/icons/arrow_down_red.svg');
+                        background-position: center;
+                        background-repeat: no-repeat; 
+                        color: lightcoral;
+                        position: absolute;
+                        left: .5rem;
+                        top: .5rem;
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                }
+            }
+
+            table,
+            th,
+            td {
+                border: 0.05rem solid $light;
+                color: $light;
+            }
+        }
     }
 }

@@ -53,15 +53,19 @@ main {
     margin-top: 0;
 
     section {
-        min-height: 1080px;
         width: 100vw;
         opacity: 1;
+        padding: 3rem 1rem;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         overflow: hidden;
+        
         transition: $slow-transition;
+        
         position: relative;
 
         background-size: cover;
@@ -114,36 +118,8 @@ main {
 
 @media (min-width: $desktop) {
     main {
-        section {
-            height: 0vh;
-            opacity: 0;
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p {
-                opacity: 0;
-                transform: translateY(20px);
-                transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-            }
-            &.active {
-                height: 100vh;
-                opacity: 1;
-                h1,
-                h2,
-                h3,
-                h4,
-                h5,
-                h6,
-                p {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
+        section {        
             &::after {
-                height: 100vh;
             }
             .row {
                 display: flex;
