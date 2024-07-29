@@ -1,5 +1,5 @@
 /*= = = = = = = = = = = = = */
-/*= = = = =SIDEBAR= = = = = */
+/*= = = = offcanvas = = = = */
 /*= = = = = = = = = = = = = */
 
 document.addEventListener('DOMContentLoaded', () => {

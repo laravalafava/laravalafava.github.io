@@ -1,4 +1,83 @@
 /*= = = = = = = = = = = = = */
+/*= = = = =FOOTER = = = = = */
+/*= = = = = = = = = = = = = */
+#copyright {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  z-index: 2;
+}
+
+main section .row .gallerySquadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .row .gallerySquadre .rosa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+main section .row .gallerySquadre .dettaglio {
+  display: flex;
+  flex-direction: column;
+}
+main section .row .gallerySquadre .dettaglio .logo {
+  width: 15rem;
+  margin: 0 auto;
+}
+main section .row .gallerySquadre .dettaglio .descrizione {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main section .row .galleryGiornate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main section .row .galleryGiornate img {
+  flex: 1 0 48%;
+  max-width: 48%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  main section .row .gallerySquadre {
+    display: flex;
+    flex-direction: row;
+  }
+  main section .row .gallerySquadre .rosa {
+    width: 50%;
+  }
+  main section .row .gallerySquadre .dettaglio {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+  }
+  main section .row .gallerySquadre .dettaglio .logo {
+    max-height: 20rem;
+  }
+  main section .row .galleryGiornate {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  main section .row .galleryGiornate img {
+    flex: 1 0 25%;
+    max-width: 25%;
+    height: auto;
+  }
+}
+/*= = = = = = = = = = = = = */
 /*= = = = =HEADER = = = = = */
 /*= = = = = = = = = = = = = */
 header {
@@ -29,27 +108,6 @@ header nav .logo {
   align-items: center;
   height: 4.5rem;
   width: 4.5rem;
-}
-header nav .nav-links {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: calc(14px + 8 * (100vw - 320px) / 1600);
-}
-header nav .nav-links li {
-  margin: 0 1rem;
-}
-header nav .nav-links li a {
-  text-decoration: none;
-  color: rgb(245, 245, 245);
-  text-transform: uppercase;
-  transition: 0.5s ease-in-out;
-}
-header nav .nav-links li a:hover {
-  text-decoration: underline;
 }
 header nav .menu-icon {
   transition: 0.5s ease-in-out;
@@ -101,17 +159,6 @@ header.sticky nav .nav-links li a {
   }
 }
 /*= = = = = = = = = = = = = */
-/*= = = = =FOOTER = = = = = */
-/*= = = = = = = = = = = = = */
-#copyright {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  display: flex;
-  z-index: 2;
-}
-
-/*= = = = = = = = = = = = = */
 /*= = = = =SIDEBAR= = = = = */
 /*= = = = = = = = = = = = = */
 .offcanvas {
@@ -128,33 +175,54 @@ header.sticky nav .nav-links li a {
 .offcanvas .offcanvas-content {
   padding: 2rem;
 }
-.offcanvas .offcanvas-content .nav-links,
-.offcanvas .offcanvas-content .past-years {
+.offcanvas .offcanvas-content .nav-links {
   list-style: none;
   padding: 0;
-  margin: 2rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: right;
 }
-.offcanvas .offcanvas-content .nav-links li,
-.offcanvas .offcanvas-content .past-years li {
+.offcanvas .offcanvas-content .nav-links li {
+  width: 100%;
   margin-bottom: 0.8rem;
-}
-.offcanvas .offcanvas-content .nav-links li a,
-.offcanvas .offcanvas-content .past-years li a {
-  text-decoration: none;
   color: rgb(245, 245, 245);
-  font-size: calc(24px + 12 * (100vw - 320px) / 1600);
+  font-size: calc(26px + 19 * (100vw - 320px) / 1600);
+  font-weight: 400;
+  border-bottom: 0.05rem solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
-.offcanvas .offcanvas-content .nav-links li a.disabled,
-.offcanvas .offcanvas-content .past-years li a.disabled {
+.offcanvas .offcanvas-content .nav-links li a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}
+.offcanvas .offcanvas-content .nav-links li a.disabled {
   opacity: 0.9;
   cursor: default;
 }
-.offcanvas .offcanvas-content .nav-links li:last-child,
-.offcanvas .offcanvas-content .past-years li:last-child {
+.offcanvas .offcanvas-content .nav-links li.active a {
+  color: #381d54;
+}
+.offcanvas .offcanvas-content .nav-links li:last-child {
   margin-bottom: 0;
+}
+.offcanvas .offcanvas-content .nav-links li .submenu {
+  display: none;
+}
+.offcanvas .offcanvas-content .nav-links li .submenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.offcanvas .offcanvas-content .nav-links li .submenu ul li {
+  font-size: calc(20px + 16 * (100vw - 320px) / 1600);
+  font-weight: 300;
+  border-bottom: 0;
+}
+.offcanvas .offcanvas-content .nav-links li:hover .submenu, .offcanvas .offcanvas-content .nav-links li:focus .submenu {
+  display: flex;
+  flex-direction: column;
 }
 .offcanvas .offcanvas-content .logo {
   display: flex;
@@ -164,9 +232,9 @@ header.sticky nav .nav-links li a {
 }
 .offcanvas .offcanvas-content .close-icon {
   position: absolute;
-  top: 2.5rem;
+  top: 2rem;
   right: 2rem;
-  font-size: 36px;
+  font-size: 3rem;
   cursor: pointer;
   color: rgb(245, 245, 245);
 }
@@ -175,10 +243,6 @@ header.sticky nav .nav-links li a {
 }
 @media (min-width: 768px) {
   .offcanvas .offcanvas-content .nav-links {
-    display: none;
-    margin: 4rem 0;
-  }
-  .offcanvas .offcanvas-content .past-years {
     margin: 4rem 0;
   }
 }
@@ -199,13 +263,6 @@ header.sticky nav .nav-links li a {
   transition: 0.8s ease-in-out;
   display: block;
   opacity: 1;
-}
-
-/*= = = = = = = = = = = = = */
-/*= = = = =SLIDER = = = = = */
-/*= = = = = = = = = = = = = */
-.slider {
-  background-color: yellow;
 }
 
 /*= = = = = = = = = = = = = */
@@ -232,6 +289,61 @@ header.sticky nav .nav-links li a {
   border-radius: 0.5rem;
 }
 
+/*= = = = = = = = = = = = = */
+/*= = = = =section = = = = = */
+/*= = = = = = = = = = = = = */
+main {
+  position: relative;
+  margin-top: 0;
+}
+main section {
+  width: 100vw;
+  opacity: 1;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+main section * {
+  z-index: 2;
+}
+main section .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  main section .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 .classifica {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -315,70 +427,63 @@ header.sticky nav .nav-links li a {
   color: rgb(245, 245, 245);
 }
 
-main section .row .gallerySquadre {
+#rosaRealMadrink {
   display: flex;
   flex-direction: column;
+  color: rgb(245, 245, 245);
+  width: 100%;
+  font-size: calc(15px + 5 * (100vw - 320px) / 1600);
+  font-weight: 300;
+}
+#rosaRealMadrink .rosa--row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
+}
+#rosaRealMadrink .rosa--row:first-child {
+  font-weight: 700;
+}
+#rosaRealMadrink .rosa--row .rosa--ruolo,
+#rosaRealMadrink .rosa--row .rosa--calciatore,
+#rosaRealMadrink .rosa--row .rosa--costo {
+  border: 0.01rem solid rgba(255, 255, 255, 0.4);
+  padding: 0.1rem 0;
+  display: flex;
   align-items: center;
-}
-main section .row .gallerySquadre .rosa {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-main section .row .gallerySquadre .dettaglio {
-  display: flex;
-  flex-direction: column;
+#rosaRealMadrink .rosa--row .rosa--ruolo {
+  width: 15%;
 }
-main section .row .gallerySquadre .dettaglio .logo {
-  width: 15rem;
-  margin: 0 auto;
+#rosaRealMadrink .rosa--row .rosa--calciatore {
+  width: 55%;
+  text-transform: capitalize;
 }
-main section .row .gallerySquadre .dettaglio .descrizione {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-main section .row .galleryGiornate {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-main section .row .galleryGiornate img {
-  flex: 1 0 48%;
-  max-width: 48%;
-  height: auto;
+#rosaRealMadrink .rosa--row .rosa--costo {
+  width: 30%;
+  font-size: calc(18px + 14 * (100vw - 320px) / 1600);
 }
 
-@media (min-width: 768px) {
-  main section .row .gallerySquadre {
-    display: flex;
-    flex-direction: row;
-  }
-  main section .row .gallerySquadre .dettaglio {
-    display: flex;
-    flex-direction: column;
-  }
-  main section .row .gallerySquadre .dettaglio .logo {
-    max-height: 20rem;
-  }
-  main section .row .galleryGiornate {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  main section .row .galleryGiornate img {
-    flex: 1 0 25%;
-    max-width: 25%;
-    height: auto;
-  }
-}
 .text-center {
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  color: rgb(245, 245, 245);
 }
 
 /*= = = = = = = = = = = = = */
@@ -403,84 +508,6 @@ img {
   max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  color: rgb(245, 245, 245);
-}
-
-p {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  color: rgb(245, 245, 245);
-}
-
-main {
-  position: relative;
-  margin-top: 0;
-}
-main section {
-  width: 100vw;
-  opacity: 1;
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.8s ease-in-out;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-main section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-main section * {
-  z-index: 2;
-}
-main section .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-  main section .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  main section .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-}
 .minilogo {
   width: 10rem;
 }

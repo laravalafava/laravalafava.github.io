@@ -1,7 +1,7 @@
 
 //colors
-$dark: rgb(33, 33, 33);
-$light: rgb(245, 245, 245);
+$black: rgb(33, 33, 33);
+$white: rgb(245, 245, 245);
 $primary: #381d54;
 
 //breakpoints
@@ -14,16 +14,17 @@ $fast-transition: 0.2s ease-in-out;
 $normal-transition: 0.5s ease-in-out;
 $slow-transition: 0.8s ease-in-out;
 
+//title-size
+$h1-title-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
+$h2-title-size: calc(26px + (45 - 26) * ((100vw - 320px) / (1920 - 320))); // calcolato
+$h3-title-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320))); // calcolato
+$h4-title-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320))); // calcolato
+$h5-title-size: calc(18px + (34 - 18) * ((100vw - 320px) / (1920 - 320))); // calcolato
+$h6-title-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
 
 //font-size
-$min-text: 14px;
-$max-text: 24px;
-$text: calc($min-text + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+$text: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
 
-//title-size
-$min-title: 24px;
-$max-title: 36px;
-$title: calc($min-title + (36 - 24) * ((100vw - 320px) / (1920 - 320)));
 
 //font-weight
 $light-weight: 300;

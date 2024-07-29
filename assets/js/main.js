@@ -1,12 +1,10 @@
 // assets/js/main.js
 
+import './components/menu.js';
 import './components/header.js';
-import './components/footer.js';
 import './components/copyright.js';
-import './components/sidebar.js';
-import './components/slider.js';
-import './components/scroll-sections.js';
-import './components/background-changer.js';
+import './components/offcanvas.js';
+import './components/classifica-order.js';
 
 
 // Codice principale

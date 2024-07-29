@@ -34,31 +34,6 @@ header {
             &.sticky {}
         }
 
-        .nav-links {
-            display: none;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            font-size: $text;
-
-            li {
-                margin: 0 1rem;
-
-                a {
-                    text-decoration: none;
-                    color: $light;
-                    text-transform: uppercase;
-                    transition: $normal-transition;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-
         .menu-icon {
             transition: $normal-transition;
             display: flex;
@@ -86,7 +61,7 @@ header {
     }
 
     &.sticky {
-        background-color: $dark;
+        background-color: $black;
         position: fixed;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
@@ -96,7 +71,7 @@ header {
             .nav-links {
                 li {
                     a {
-                        color: $light;
+                        color: $white;
                     }
                 }
             }
@@ -131,3 +106,6 @@ header {
     
 }
 
+// menu.scss
+
+  

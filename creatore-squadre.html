@@ -1,0 +1,73 @@
+<div id="rosaContainer"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('assets/data/2023/formazioni.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('rosaContainer');
+            data.squadre.forEach(squadra => {
+                const squadraContainer = document.createElement('div');
+                squadraContainer.className = 'squadra';
+                squadraContainer.innerHTML = `<h2>${squadra.nome}</h2>`;
+                
+                squadra.giocatori.sort((a, b) => {
+                    const ruoloOrder = { 'P': 1, 'D': 2, 'C': 3, 'A': 4 };
+                    if (a.ruolo === b.ruolo) {
+                        return b.costo - a.costo;
+                    } else {
+                        return ruoloOrder[a.ruolo] - ruoloOrder[b.ruolo];
+                    }
+                });
+
+                squadra.giocatori.forEach(giocatore => {
+                    const row = document.createElement('div');
+                    row.className = 'rosa--row';
+                    row.innerHTML = `
+                        <div class="rosa--ruolo">${giocatore.ruolo}</div>
+                        <div class="rosa--calciatore">${giocatore.calciatore}</div>
+                        <div class="rosa--costo">${giocatore.costo}</div>
+                    `;
+                    squadraContainer.appendChild(row);
+                });
+
+                container.appendChild(squadraContainer);
+            });
+        });
+});
+
+</script>
+
+<style>
+    .rosa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rosa--row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rosa--ruolo, .rosa--calciatore, .rosa--costo {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .rosa--row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rosa--ruolo, .rosa--calciatore, .rosa--costo {
+        text-align: left;
+        padding: 5px 0;
+    }
+}
+
+</style>

@@ -1,0 +1,80 @@
+/*= = = = = = = = = = = = = */
+/*= = = = =section = = = = = */
+/*= = = = = = = = = = = = = */
+
+main {
+    position: relative;
+    margin-top: 0;
+
+    section {
+        width: 100vw;
+        opacity: 1;
+        padding: 3rem 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+        
+        transition: $slow-transition;
+        
+        position: relative;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;        
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        * {
+            z-index: 2;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    main {
+        section {
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }    
+        }    
+    }
+}
+
+@media (min-width: $desktop) {
+    main {
+        section {        
+            &::after {
+            }
+            .row {
+            }    
+        }    
+    }
+}

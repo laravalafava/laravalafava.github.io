@@ -1,0 +1,64 @@
+{
+    "squadre": [
+        {
+            "nome": "Real Madrink",
+            "giocatori": [
+                {"ruolo": "P", "calciatore": "Meret", "costo": 22},
+                {"ruolo": "P", "calciatore": "Gollini", "costo": 1},
+                {"ruolo": "P", "calciatore": "Contini", "costo": 1},
+                {"ruolo": "D", "calciatore": "Bastoni", "costo": 26},
+                {"ruolo": "D", "calciatore": "Zappacosta", "costo": 17},
+                {"ruolo": "D", "calciatore": "Acerbi", "costo": 12},
+                {"ruolo": "D", "calciatore": "Patric", "costo": 10},
+                {"ruolo": "D", "calciatore": "Kyriakopoulos", "costo": 10},
+                {"ruolo": "D", "calciatore": "Dossena", "costo": 6},
+                {"ruolo": "D", "calciatore": "Djidji", "costo": 5},
+                {"ruolo": "D", "calciatore": "Dorgu", "costo": 3},
+                {"ruolo": "C", "calciatore": "Loftus-Cheek", "costo": 34},
+                {"ruolo": "C", "calciatore": "Pereyra", "costo": 26},
+                {"ruolo": "C", "calciatore": "Viola", "costo": 22},
+                {"ruolo": "C", "calciatore": "Politano", "costo": 15},
+                {"ruolo": "C", "calciatore": "Pasalic", "costo": 15},
+                {"ruolo": "C", "calciatore": "Bajrami", "costo": 15},
+                {"ruolo": "C", "calciatore": "Ricci S.", "costo": 15},
+                {"ruolo": "C", "calciatore": "Ndoye", "costo": 15},
+                {"ruolo": "A", "calciatore": "Immobile", "costo": 123},
+                {"ruolo": "A", "calciatore": "Thuram", "costo": 66},
+                {"ruolo": "A", "calciatore": "Banda", "costo": 20},
+                {"ruolo": "A", "calciatore": "Lucca", "costo": 10},
+                {"ruolo": "A", "calciatore": "Pellegri", "costo": 9},
+                {"ruolo": "A", "calciatore": "Kaio Jorge", "costo": 2}
+            ]
+        },
+        {
+            "nome": "HannAver 23",
+            "giocatori": [
+                {"ruolo": "P", "calciatore": "Milinkovic-Savic V.", "costo": 10},
+                {"ruolo": "P", "calciatore": "Gemello", "costo": 1},
+                {"ruolo": "P", "calciatore": "Popa", "costo": 1},
+                {"ruolo": "D", "calciatore": "Di Lorenzo", "costo": 67},
+                {"ruolo": "D", "calciatore": "Spinazzola", "costo": 17},
+                {"ruolo": "D", "calciatore": "Bijol", "costo": 14},
+                {"ruolo": "D", "calciatore": "Cambiaso", "costo": 12},
+                {"ruolo": "D", "calciatore": "Holm", "costo": 12},
+                {"ruolo": "D", "calciatore": "Erlic", "costo": 8},
+                {"ruolo": "D", "calciatore": "Beukema", "costo": 10},
+                {"ruolo": "D", "calciatore": "Kayode", "costo": 2},
+                {"ruolo": "C", "calciatore": "Felipe Anderson", "costo": 32},
+                {"ruolo": "C", "calciatore": "Frattesi", "costo": 26},
+                {"ruolo": "C", "calciatore": "Miranchuk", "costo": 22},
+                {"ruolo": "C", "calciatore": "Guendouzi", "costo": 18},
+                {"ruolo": "C", "calciatore": "Colpani", "costo": 19},
+                {"ruolo": "C", "calciatore": "Suslov", "costo": 11},
+                {"ruolo": "C", "calciatore": "Iling Junior", "costo": 8},
+                {"ruolo": "C", "calciatore": "Martegani", "costo": 5},
+                {"ruolo": "A", "calciatore": "Berardi", "costo": 79},
+                {"ruolo": "A", "calciatore": "Beltran L.", "costo": 76},
+                {"ruolo": "A", "calciatore": "Raspadori", "costo": 16},
+                {"ruolo": "A", "calciatore": "Cambiaghi", "costo": 14},
+                {"ruolo": "A", "calciatore": "Mulattieri", "costo": 12},
+                {"ruolo": "A", "calciatore": "Noslin", "costo": 8}
+            ]
+        }
+    ]
+}

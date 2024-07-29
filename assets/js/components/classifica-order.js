@@ -2,10 +2,10 @@
 /*= = =CLASSIFICA 2023= = = */
 /*= = = = = = = = = = = = = */
 
-let previousClassifica = []; 
+
 document.addEventListener("DOMContentLoaded", function() {
   let previousClassifica = []; 
-  fetch('./assets/data/2023/classifica-campionato-2023.json')
+  fetch('/assets/data/2023/campionato.json')
     .then(response => response.json())
     .then(data => {
       data.giornate.forEach((giornata, index) => {

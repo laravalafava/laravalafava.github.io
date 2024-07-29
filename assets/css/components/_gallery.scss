@@ -15,6 +15,7 @@ main {
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    width: 100%;
                 }
                 .dettaglio {
                     display: flex;
@@ -54,10 +55,14 @@ main {
                 .gallerySquadre {
                     display: flex;
                     flex-direction: row;
-                    .rosa {}
+                    .rosa {
+                        width: 50%;
+                    }
                     .dettaglio {
                         display: flex;
                         flex-direction: column;
+                        width: 50%;
+                        padding: 1rem;
                         .logo {
                             max-height: 20rem;
                         }

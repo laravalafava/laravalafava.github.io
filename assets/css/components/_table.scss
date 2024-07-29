@@ -6,7 +6,7 @@
 
     .table-container {
         margin-bottom: 1.5rem;
-        border: 0.05rem solid $light;
+        border: 0.05rem solid $white;
         border-radius: .25rem;
         overflow: hidden;
         box-sizing: border-box;
@@ -14,7 +14,7 @@
         h2 {
             margin: 0;
             padding: .5rem;
-            color: $light;
+            color: $white;
             cursor: pointer;
             text-align: center;
         }
@@ -81,9 +81,52 @@
             table,
             th,
             td {
-                border: 0.05rem solid $light;
-                color: $light;
+                border: 0.05rem solid $white;
+                color: $white;
             }
         }
     }
+}
+
+#rosaRealMadrink {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    width: 100%;
+    font-size: $text;
+    font-weight: $light-weight;
+
+    .rosa--row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        &:first-child {
+            font-weight: $bold-weight;
+        }
+
+        .rosa--ruolo,
+        .rosa--calciatore,
+        .rosa--costo {
+            border: 0.01rem solid rgba(255, 255, 255, 0.4);
+            padding: 0.1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rosa--ruolo {
+            width: 15%;
+        }
+        .rosa--calciatore {
+            width: 55%;
+            text-transform: capitalize;
+        }
+        .rosa--costo {
+            width: 30%;
+            font-size: $h6-title-size;
+        }
+
+    }
+
 }

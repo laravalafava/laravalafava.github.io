@@ -1,0 +1,60 @@
+{
+    "menu": [
+      {
+        "label": "Home",
+        "href": "index",
+        "submenu": []
+      },
+      {
+        "label": "2023",
+        "submenu": [
+          { "label": "Formazioni", "href": "./2023/formazioni" },
+          { "label": "Campionato", "href": "./2023/campionato" },
+          { "label": "Coppa del Gallo", "href": "./2023/coppa-del-gallo" },
+          { "label": "Last Man Standing", "href": "./2023/last-man-standing" },
+          { "label": "Royal Rumble", "href": "./2023/royal-rumble" }
+        ]
+      },
+      {
+        "label": "2022",
+        "submenu": [
+          { "label": "Formazioni", "href": "./2022/formazioni" },
+          { "label": "Campionato", "href": "./2022/campionato" },
+          { "label": "Coppa del Gallo", "href": "./2022/coppa-del-gallo" },
+          { "label": "Last Man Standing", "href": "./2022/last-man-standing" },
+          { "label": "Royal Rumble", "href": "./2022/royal-rumble" }
+        ]
+      },
+      {
+        "label": "2021",
+        "submenu": [
+          { "label": "Formazioni", "href": "./2021/formazioni" },
+          { "label": "Campionato", "href": "./2021/campionato" },
+          { "label": "Coppa del Gallo", "href": "./2021/coppa-del-gallo" },
+          { "label": "Last Man Standing", "href": "./2021/last-man-standing" },
+          { "label": "Royal Rumble", "href": "./2021/royal-rumble" }
+        ]
+      },
+      {
+        "label": "2020",
+        "submenu": [
+          { "label": "Formazioni", "href": "./2020/formazioni" },
+          { "label": "Campionato", "href": "./2020/campionato" },
+          { "label": "Coppa del Gallo", "href": "./2020/coppa-del-gallo" },
+          { "label": "Last Man Standing", "href": "./2020/last-man-standing" },
+          { "label": "Royal Rumble", "href": "./2020/royal-rumble" }
+        ]
+      },
+      {
+        "label": "2019",
+        "submenu": [
+          { "label": "Formazioni", "href": "./2019/formazioni" },
+          { "label": "Campionato", "href": "./2019/campionato" },
+          { "label": "Coppa del Gallo", "href": "./2019/coppa-del-gallo" },
+          { "label": "Last Man Standing", "href": "./2019/last-man-standing" },
+          { "label": "Royal Rumble", "href": "./2019/royal-rumble" }
+        ]
+      }
+    ]
+  }
+  
