@@ -9,6 +9,8 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                padding: 1rem 1rem 2rem 1rem;
+                border-bottom: 0.1rem solid $white;
                 .rosa {
                     display: flex;
                     flex-direction: column;
@@ -30,6 +32,22 @@ main {
                         justify-content: center;
                         align-items: center;
                         text-align: center;
+                    }
+                }
+                &:nth-child(even) {
+                    .rosa {
+                        order: 1;
+                    }
+                    .dettaglio {
+                        order: 2;
+                    }
+                }
+                &:nth-child(odd) {
+                    .rosa {
+                        order: 1;
+                    }
+                    .dettaglio {
+                        order: 2;
                     }
                 }
             }
@@ -57,6 +75,7 @@ main {
                     flex-direction: row;
                     .rosa {
                         width: 50%;
+                        display: flex;
                     }
                     .dettaglio {
                         display: flex;
@@ -67,6 +86,22 @@ main {
                             max-height: 20rem;
                         }
                         .descrizione {}
+                    }
+                    &:nth-child(even) {
+                        .rosa {
+                            order: 2;
+                        }
+                        .dettaglio {
+                            order: 1;
+                        }
+                    }
+                    &:nth-child(odd) {
+                        .rosa {
+                            order: 1;
+                        }
+                        .dettaglio {
+                            order: 2;
+                        }
                     }
                 }
                 .galleryGiornate {

@@ -1,21 +1,17 @@
 /*= = = = = = = = = = = = = */
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
-/*= = =CLASSIFICA 2023= = = */
+/*= = = campionato = = = */
 /*= = = = = = = = = = = = = */
 
+let previousClassifica = []; 
 
 document.addEventListener("DOMContentLoaded", function() {
-  let previousClassifica = []; 
-  fetch('/assets/data/2023/campionato.json')
-========
-/*= = =COPPA DEL GALLO 2023= = = */
-/*= = = = = = = = = = = = = */
-
-let previousClassificaGallo = []; 
-document.addEventListener("DOMContentLoaded", function() {
-  let previousClassificaGallo = []; 
-  fetch('./assets/data/2023/classifica-coppa-gallo-2023.json')
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
+  // Recupera l'anno dal DOM
+  const anno = document.getElementById('folderAnno').textContent.trim();
+  console.log('Campionato ' + anno);
+  // Costruisci l'URL dinamicamente
+  const url = `../assets/data/${anno}/campionato.json`;
+  
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       data.giornate.forEach((giornata, index) => {
@@ -33,41 +29,29 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function generateTable(giornata, giornataIndex, tutteGiornate) {
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
-  const calendarDiv = document.getElementById('classificaCampionato2023');
-========
-  const calendarDiv = document.getElementById('classificaCoppaGallo2023');
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
-  
+  const calendarDiv = document.getElementById('classificaCampionato');
+
   const tableContainer = document.createElement('div');
   tableContainer.classList.add('table-container');
-  
+
   const heading = document.createElement('h2');
   heading.textContent = `Giornata ${giornata.giornata}`;
   tableContainer.appendChild(heading);
-  
+
   const tableWrapper = document.createElement('div');
   tableWrapper.classList.add('table-wrapper');
-  
+
   const partiteTable = createPartiteTable(giornata);
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
   const classificaTable = createClassificaTable(tutteGiornate.slice(0, giornataIndex), previousClassifica);
-========
-  const classificaTable = createClassificaTable(tutteGiornate.slice(0, giornataIndex), previousClassificaGallo);
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
-  
+
   tableWrapper.appendChild(partiteTable);
   tableWrapper.appendChild(classificaTable);
-  
+
   tableContainer.appendChild(tableWrapper);
   calendarDiv.appendChild(tableContainer);
-  
+
   // Aggiorna la classifica precedente
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
   previousClassifica = calculateClassifica(tutteGiornate.slice(0, giornataIndex));
-========
-  previousClassificaGallo = calculateClassifica(tutteGiornate.slice(0, giornataIndex));
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
 }
 
 function toggleAccordion(heading) {
@@ -87,7 +71,7 @@ function toggleAccordion(heading) {
 
 function createPartiteTable(giornata) {
   const table = document.createElement('table');
-  
+
   const headerRow = document.createElement('tr');
   const headers = ['Sq. Casa', 'Pt.', 'Gol Casa', 'Gol Trasf.', 'Pt.', 'Sq. Trasf.'];
   headers.forEach(headerText => {
@@ -96,49 +80,45 @@ function createPartiteTable(giornata) {
     headerRow.appendChild(th);
   });
   table.appendChild(headerRow);
-  
+
   giornata.partite.forEach(partita => {
     const row = document.createElement('tr');
-    
+
     const cellSquadraCasa = document.createElement('td');
     cellSquadraCasa.textContent = partita.squadra_casa;
     row.appendChild(cellSquadraCasa);
-    
+
     const cellPuntiCasa = document.createElement('td');
     cellPuntiCasa.textContent = partita.punti_casa;
     row.appendChild(cellPuntiCasa);
-    
+
     const cellGolCasa = document.createElement('td');
     cellGolCasa.textContent = partita.gol_casa;
     row.appendChild(cellGolCasa);
-    
+
     const cellGolTrasferta = document.createElement('td');
     cellGolTrasferta.textContent = partita.gol_trasferta;
     row.appendChild(cellGolTrasferta);
-    
+
     const cellPuntiTrasferta = document.createElement('td');
     cellPuntiTrasferta.textContent = partita.punti_trasferta;
     row.appendChild(cellPuntiTrasferta);
-    
+
     const cellSquadraTrasferta = document.createElement('td');
     cellSquadraTrasferta.textContent = partita.squadra_trasferta;
     row.appendChild(cellSquadraTrasferta);
-    
+
     table.appendChild(row);
   });
-  
+
   return table;
 }
 
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
 function createClassificaTable(giornate, previousClassifica = []) {
-========
-function createClassificaTable(giornate, previousClassificaGallo = []) {
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
   const classifica = calculateClassifica(giornate);
-  
+
   const table = document.createElement('table');
-  
+
   const headerRow = document.createElement('tr');
   const headers = ['Posizione', 'Squadra', 'G', 'V', 'N', 'P', 'Gf', 'Gs', 'Dr', 'Pt.', 'Pt. Totali'];
   headers.forEach(headerText => {
@@ -147,61 +127,56 @@ function createClassificaTable(giornate, previousClassificaGallo = []) {
     headerRow.appendChild(th);
   });
   table.appendChild(headerRow);
-  
+
   classifica.forEach((squadra, index) => {
     const row = document.createElement('tr');
-    
+
     const cellPosizione = document.createElement('td');
     cellPosizione.textContent = index + 1;
     row.appendChild(cellPosizione);
-    
+
     const cellSquadra = document.createElement('td');
     cellSquadra.textContent = squadra.nome;
     row.appendChild(cellSquadra);
-    
+
     const cellG = document.createElement('td');
     cellG.textContent = squadra.giocate;
     row.appendChild(cellG);
-    
+
     const cellV = document.createElement('td');
     cellV.textContent = squadra.vinte;
     row.appendChild(cellV);
-    
+
     const cellN = document.createElement('td');
     cellN.textContent = squadra.pareggiate;
     row.appendChild(cellN);
-    
+
     const cellP = document.createElement('td');
     cellP.textContent = squadra.perse;
     row.appendChild(cellP);
-    
+
     const cellGf = document.createElement('td');
     cellGf.textContent = squadra.gol_fatti;
     row.appendChild(cellGf);
-    
+
     const cellGs = document.createElement('td');
     cellGs.textContent = squadra.gol_subiti;
     row.appendChild(cellGs);
-    
+
     const cellDr = document.createElement('td');
     cellDr.textContent = squadra.differenza_reti;
     row.appendChild(cellDr);
-    
+
     const cellPt = document.createElement('td');
     cellPt.textContent = squadra.punti;
     row.appendChild(cellPt);
-    
+
     const cellPtTotali = document.createElement('td');
     cellPtTotali.textContent = squadra.punti_totali;
     row.appendChild(cellPtTotali);
-    
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
+
     if (previousClassifica.length > 0) {
       const previousIndex = previousClassifica.findIndex(prevSquadra => prevSquadra.nome === squadra.nome);
-========
-    if (previousClassificaGallo.length > 0) {
-      const previousIndex = previousClassificaGallo.findIndex(prevSquadra => prevSquadra.nome === squadra.nome);
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
       if (previousIndex !== -1) {
         if (previousIndex < index) {
           row.style.backgroundColor = 'rgb(240 128 128 / 50%)'; // Discesa
@@ -212,20 +187,16 @@ function createClassificaTable(giornate, previousClassificaGallo = []) {
         }
       }
     }
-    
-<<<<<<<< HEAD:assets/js/components/classifica-order.js
-    
-========
->>>>>>>> 797817ab38a3af42d34dd96876580c05799b21ff:assets/js/components/classifica-coppa-gallo-2023.js
+
     table.appendChild(row);
   });
-  
+
   return table;
 }
 
 function calculateClassifica(giornate) {
   const squadre = {};
-  
+
   giornate.forEach(giornata => {
     giornata.partite.forEach(partita => {
       if (!squadre[partita.squadra_casa]) {
@@ -234,10 +205,10 @@ function calculateClassifica(giornate) {
       if (!squadre[partita.squadra_trasferta]) {
         squadre[partita.squadra_trasferta] = createEmptyTeam(partita.squadra_trasferta);
       }
-      
+
       updateTeamStats(squadre[partita.squadra_casa], partita.punti_casa, partita.gol_casa, partita.gol_trasferta);
       updateTeamStats(squadre[partita.squadra_trasferta], partita.punti_trasferta, partita.gol_trasferta, partita.gol_casa);
-      
+
       if (partita.gol_casa > partita.gol_trasferta) {
         squadre[partita.squadra_casa].vinte++;
         squadre[partita.squadra_casa].punti += 3;
@@ -254,7 +225,7 @@ function calculateClassifica(giornate) {
       }
     });
   });
-  
+
   return Object.values(squadre).sort((a, b) => b.punti - a.punti || b.differenza_reti - a.differenza_reti || b.gol_fatti - a.gol_fatti);
 }
 

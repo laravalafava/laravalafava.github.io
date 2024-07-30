@@ -14,6 +14,8 @@ main section .row .gallerySquadre {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+  border-bottom: 0.1rem solid rgb(245, 245, 245);
 }
 main section .row .gallerySquadre .rosa {
   display: flex;
@@ -38,6 +40,18 @@ main section .row .gallerySquadre .dettaglio .descrizione {
   align-items: center;
   text-align: center;
 }
+main section .row .gallerySquadre:nth-child(even) .rosa {
+  order: 1;
+}
+main section .row .gallerySquadre:nth-child(even) .dettaglio {
+  order: 2;
+}
+main section .row .gallerySquadre:nth-child(odd) .rosa {
+  order: 1;
+}
+main section .row .gallerySquadre:nth-child(odd) .dettaglio {
+  order: 2;
+}
 main section .row .galleryGiornate {
   display: flex;
   justify-content: center;
@@ -57,6 +71,7 @@ main section .row .galleryGiornate img {
   }
   main section .row .gallerySquadre .rosa {
     width: 50%;
+    display: flex;
   }
   main section .row .gallerySquadre .dettaglio {
     display: flex;
@@ -66,6 +81,18 @@ main section .row .galleryGiornate img {
   }
   main section .row .gallerySquadre .dettaglio .logo {
     max-height: 20rem;
+  }
+  main section .row .gallerySquadre:nth-child(even) .rosa {
+    order: 2;
+  }
+  main section .row .gallerySquadre:nth-child(even) .dettaglio {
+    order: 1;
+  }
+  main section .row .gallerySquadre:nth-child(odd) .rosa {
+    order: 1;
+  }
+  main section .row .gallerySquadre:nth-child(odd) .dettaglio {
+    order: 2;
   }
   main section .row .galleryGiornate {
     display: flex;
@@ -202,7 +229,7 @@ header.sticky nav .nav-links li a {
   cursor: default;
 }
 .offcanvas .offcanvas-content .nav-links li.active a {
-  color: #381d54;
+  color: rgb(245, 245, 245);
 }
 .offcanvas .offcanvas-content .nav-links li:last-child {
   margin-bottom: 0;
@@ -427,6 +454,17 @@ main section .row {
   color: rgb(245, 245, 245);
 }
 
+#rosaAmbrosiana,
+#rosaArmandillo,
+#rosaAjajaxBrazorf,
+#rosaAtleticoTerronya,
+#rosaFCBahhhhhhh,
+#rosaHannaver,
+#rosaYoungBoy,
+#rosaLeptisMagna,
+#rosaMontescarsini,
+#rosaMontrappoliUnited,
+#rosaRealGurgugnao,
 #rosaRealMadrink {
   display: flex;
   flex-direction: column;
@@ -435,15 +473,70 @@ main section .row {
   font-size: calc(15px + 5 * (100vw - 320px) / 1600);
   font-weight: 300;
 }
+#rosaAmbrosiana .rosa--row,
+#rosaArmandillo .rosa--row,
+#rosaAjajaxBrazorf .rosa--row,
+#rosaAtleticoTerronya .rosa--row,
+#rosaFCBahhhhhhh .rosa--row,
+#rosaHannaver .rosa--row,
+#rosaYoungBoy .rosa--row,
+#rosaLeptisMagna .rosa--row,
+#rosaMontescarsini .rosa--row,
+#rosaMontrappoliUnited .rosa--row,
+#rosaRealGurgugnao .rosa--row,
 #rosaRealMadrink .rosa--row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
 }
+#rosaAmbrosiana .rosa--row:first-child,
+#rosaArmandillo .rosa--row:first-child,
+#rosaAjajaxBrazorf .rosa--row:first-child,
+#rosaAtleticoTerronya .rosa--row:first-child,
+#rosaFCBahhhhhhh .rosa--row:first-child,
+#rosaHannaver .rosa--row:first-child,
+#rosaYoungBoy .rosa--row:first-child,
+#rosaLeptisMagna .rosa--row:first-child,
+#rosaMontescarsini .rosa--row:first-child,
+#rosaMontrappoliUnited .rosa--row:first-child,
+#rosaRealGurgugnao .rosa--row:first-child,
 #rosaRealMadrink .rosa--row:first-child {
   font-weight: 700;
 }
+#rosaAmbrosiana .rosa--row .rosa--ruolo,
+#rosaAmbrosiana .rosa--row .rosa--calciatore,
+#rosaAmbrosiana .rosa--row .rosa--costo,
+#rosaArmandillo .rosa--row .rosa--ruolo,
+#rosaArmandillo .rosa--row .rosa--calciatore,
+#rosaArmandillo .rosa--row .rosa--costo,
+#rosaAjajaxBrazorf .rosa--row .rosa--ruolo,
+#rosaAjajaxBrazorf .rosa--row .rosa--calciatore,
+#rosaAjajaxBrazorf .rosa--row .rosa--costo,
+#rosaAtleticoTerronya .rosa--row .rosa--ruolo,
+#rosaAtleticoTerronya .rosa--row .rosa--calciatore,
+#rosaAtleticoTerronya .rosa--row .rosa--costo,
+#rosaFCBahhhhhhh .rosa--row .rosa--ruolo,
+#rosaFCBahhhhhhh .rosa--row .rosa--calciatore,
+#rosaFCBahhhhhhh .rosa--row .rosa--costo,
+#rosaHannaver .rosa--row .rosa--ruolo,
+#rosaHannaver .rosa--row .rosa--calciatore,
+#rosaHannaver .rosa--row .rosa--costo,
+#rosaYoungBoy .rosa--row .rosa--ruolo,
+#rosaYoungBoy .rosa--row .rosa--calciatore,
+#rosaYoungBoy .rosa--row .rosa--costo,
+#rosaLeptisMagna .rosa--row .rosa--ruolo,
+#rosaLeptisMagna .rosa--row .rosa--calciatore,
+#rosaLeptisMagna .rosa--row .rosa--costo,
+#rosaMontescarsini .rosa--row .rosa--ruolo,
+#rosaMontescarsini .rosa--row .rosa--calciatore,
+#rosaMontescarsini .rosa--row .rosa--costo,
+#rosaMontrappoliUnited .rosa--row .rosa--ruolo,
+#rosaMontrappoliUnited .rosa--row .rosa--calciatore,
+#rosaMontrappoliUnited .rosa--row .rosa--costo,
+#rosaRealGurgugnao .rosa--row .rosa--ruolo,
+#rosaRealGurgugnao .rosa--row .rosa--calciatore,
+#rosaRealGurgugnao .rosa--row .rosa--costo,
 #rosaRealMadrink .rosa--row .rosa--ruolo,
 #rosaRealMadrink .rosa--row .rosa--calciatore,
 #rosaRealMadrink .rosa--row .rosa--costo {
@@ -453,13 +546,46 @@ main section .row {
   align-items: center;
   justify-content: center;
 }
+#rosaAmbrosiana .rosa--row .rosa--ruolo,
+#rosaArmandillo .rosa--row .rosa--ruolo,
+#rosaAjajaxBrazorf .rosa--row .rosa--ruolo,
+#rosaAtleticoTerronya .rosa--row .rosa--ruolo,
+#rosaFCBahhhhhhh .rosa--row .rosa--ruolo,
+#rosaHannaver .rosa--row .rosa--ruolo,
+#rosaYoungBoy .rosa--row .rosa--ruolo,
+#rosaLeptisMagna .rosa--row .rosa--ruolo,
+#rosaMontescarsini .rosa--row .rosa--ruolo,
+#rosaMontrappoliUnited .rosa--row .rosa--ruolo,
+#rosaRealGurgugnao .rosa--row .rosa--ruolo,
 #rosaRealMadrink .rosa--row .rosa--ruolo {
   width: 15%;
 }
+#rosaAmbrosiana .rosa--row .rosa--calciatore,
+#rosaArmandillo .rosa--row .rosa--calciatore,
+#rosaAjajaxBrazorf .rosa--row .rosa--calciatore,
+#rosaAtleticoTerronya .rosa--row .rosa--calciatore,
+#rosaFCBahhhhhhh .rosa--row .rosa--calciatore,
+#rosaHannaver .rosa--row .rosa--calciatore,
+#rosaYoungBoy .rosa--row .rosa--calciatore,
+#rosaLeptisMagna .rosa--row .rosa--calciatore,
+#rosaMontescarsini .rosa--row .rosa--calciatore,
+#rosaMontrappoliUnited .rosa--row .rosa--calciatore,
+#rosaRealGurgugnao .rosa--row .rosa--calciatore,
 #rosaRealMadrink .rosa--row .rosa--calciatore {
   width: 55%;
   text-transform: capitalize;
 }
+#rosaAmbrosiana .rosa--row .rosa--costo,
+#rosaArmandillo .rosa--row .rosa--costo,
+#rosaAjajaxBrazorf .rosa--row .rosa--costo,
+#rosaAtleticoTerronya .rosa--row .rosa--costo,
+#rosaFCBahhhhhhh .rosa--row .rosa--costo,
+#rosaHannaver .rosa--row .rosa--costo,
+#rosaYoungBoy .rosa--row .rosa--costo,
+#rosaLeptisMagna .rosa--row .rosa--costo,
+#rosaMontescarsini .rosa--row .rosa--costo,
+#rosaMontrappoliUnited .rosa--row .rosa--costo,
+#rosaRealGurgugnao .rosa--row .rosa--costo,
 #rosaRealMadrink .rosa--row .rosa--costo {
   width: 30%;
   font-size: calc(18px + 14 * (100vw - 320px) / 1600);
