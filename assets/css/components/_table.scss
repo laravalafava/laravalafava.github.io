@@ -141,3 +141,175 @@
     }
 
 }
+
+#fullFormazioni {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: $white;
+    font-size: $text;
+    font-weight: $light-weight;
+    overflow-x: scroll;
+    .squadra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        border: 0.01rem solid $white;
+        .nomeSquadra {
+            display: -webkit-box;
+            text-align: center;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            border-bottom: 0.01rem solid $white;
+            font-weight: $regular-weight;
+        }
+        .giocatore {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0.3rem 0;
+            .nome {
+                display: -webkit-box;
+                text-align: center;
+                width: 80%;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                padding: 0 0.2rem;
+            }
+            .costo {
+                display: flex;
+                justify-content: center;
+                width: 20%;
+                padding: 0 0.2rem;
+            }
+            &:nth-child(4),
+            &:nth-child(12),
+            &:nth-child(20) {
+                border-bottom: 0.01rem solid $white;
+            }
+        }
+    }
+    &::-webkit-scrollbar {
+        height: 0.3rem;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $black;
+      }
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $white;
+        border-radius: 0.5rem;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+        border-radius: 0.5rem;
+      }
+}
+
+.partiteCoppa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    color: $white;
+    font-size: $text;
+    font-weight: $light-weight;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    .partita {
+        border: 0.01rem solid $white;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1 1 calc(100% - 0.5rem);
+        gap: .5rem;
+        box-sizing: border-box;
+        margin: .5rem auto;
+        .giornata {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 0.01rem solid $white;
+            text-align: center;
+            font-size: $h6-title-size;
+            font-weight: $regular-weight;
+            margin: 0;
+            padding: 0rem 0 .5rem 0;
+        }
+        .dettagli {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            .squadraCasa,
+            .squadraTrasferta {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .nome {
+                    text-align: center;
+                }
+                .punti {
+                    text-align: center;
+                }
+            }
+
+            .squadraCasa {
+                width: 33%;
+                border-right: 0.01rem solid $white;
+            }
+            .risultato {
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: $h4-title-size;
+                font-weight: $bold-weight;
+            }
+            .squadraTrasferta {
+                width: 33%;
+                border-left: 0.01rem solid $white;
+            }
+
+        }
+        .riposo {
+            border-top: 0.01rem solid $white;
+            padding-top: .5rem;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
+    }
+}
+@media (min-width: $tablet) {
+    .partiteCoppa {
+        .partita {
+            width: 50%;
+            flex: 1 1 calc(50% - 0.5rem);
+        }
+    }
+}
+@media (min-width: $desktop) {
+    .partiteCoppa {
+        .partita {
+            width: 33%;
+            flex: 1 1 calc(33% - 0.5rem);
+        }
+    }
+}

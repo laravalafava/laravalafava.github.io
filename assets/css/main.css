@@ -228,7 +228,7 @@ header.sticky nav .nav-links li a {
   cursor: default;
 }
 .offcanvas .offcanvas-content .nav-links li.active a {
-  color: rgb(245, 245, 245);
+  color: #7b00ff;
 }
 .offcanvas .offcanvas-content .nav-links li:last-child {
   margin-bottom: 0;
@@ -249,6 +249,7 @@ header.sticky nav .nav-links li a {
 .offcanvas .offcanvas-content .nav-links li:hover .submenu, .offcanvas .offcanvas-content .nav-links li:focus .submenu {
   display: flex;
   flex-direction: column;
+  color: #7b00ff;
 }
 .offcanvas .offcanvas-content .logo {
   display: flex;
@@ -311,7 +312,7 @@ header.sticky nav .nav-links li a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #381d54;
+  background: #7b00ff;
   border-radius: 0.5rem;
 }
 
@@ -590,6 +591,169 @@ main section .row {
   font-size: calc(18px + 14 * (100vw - 320px) / 1600);
 }
 
+#fullFormazioni {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: rgb(245, 245, 245);
+  font-size: calc(15px + 5 * (100vw - 320px) / 1600);
+  font-weight: 300;
+  overflow-x: scroll;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#fullFormazioni .squadra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border: 0.01rem solid rgb(245, 245, 245);
+}
+#fullFormazioni .squadra .nomeSquadra {
+  display: -webkit-box;
+  text-align: center;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  border-bottom: 0.01rem solid rgb(245, 245, 245);
+  font-weight: 400;
+}
+#fullFormazioni .squadra .giocatore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.3rem 0;
+}
+#fullFormazioni .squadra .giocatore .nome {
+  display: -webkit-box;
+  text-align: center;
+  width: 80%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 0 0.2rem;
+}
+#fullFormazioni .squadra .giocatore .costo {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding: 0 0.2rem;
+}
+#fullFormazioni .squadra .giocatore:nth-child(4), #fullFormazioni .squadra .giocatore:nth-child(12), #fullFormazioni .squadra .giocatore:nth-child(20) {
+  border-bottom: 0.01rem solid rgb(245, 245, 245);
+}
+#fullFormazioni::-webkit-scrollbar {
+  height: 0.3rem;
+}
+#fullFormazioni::-webkit-scrollbar-track {
+  background: rgb(33, 33, 33);
+}
+#fullFormazioni::-webkit-scrollbar-thumb {
+  background: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+}
+#fullFormazioni::-webkit-scrollbar-thumb:hover {
+  background: #7b00ff;
+  border-radius: 0.5rem;
+}
+
+.partiteCoppa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: rgb(245, 245, 245);
+  font-size: calc(15px + 5 * (100vw - 320px) / 1600);
+  font-weight: 300;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.partiteCoppa .partita {
+  border: 0.01rem solid rgb(245, 245, 245);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 calc(100% - 0.5rem);
+  gap: 0.5rem;
+  box-sizing: border-box;
+  margin: 0.5rem auto;
+}
+.partiteCoppa .partita .giornata {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 0.01rem solid rgb(245, 245, 245);
+  text-align: center;
+  font-size: calc(18px + 14 * (100vw - 320px) / 1600);
+  font-weight: 400;
+  margin: 0;
+  padding: 0rem 0 0.5rem 0;
+}
+.partiteCoppa .partita .dettagli {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.partiteCoppa .partita .dettagli .squadraCasa,
+.partiteCoppa .partita .dettagli .squadraTrasferta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.partiteCoppa .partita .dettagli .squadraCasa .nome,
+.partiteCoppa .partita .dettagli .squadraTrasferta .nome {
+  text-align: center;
+}
+.partiteCoppa .partita .dettagli .squadraCasa .punti,
+.partiteCoppa .partita .dettagli .squadraTrasferta .punti {
+  text-align: center;
+}
+.partiteCoppa .partita .dettagli .squadraCasa {
+  width: 33%;
+  border-right: 0.01rem solid rgb(245, 245, 245);
+}
+.partiteCoppa .partita .dettagli .risultato {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(20px + 16 * (100vw - 320px) / 1600);
+  font-weight: 700;
+}
+.partiteCoppa .partita .dettagli .squadraTrasferta {
+  width: 33%;
+  border-left: 0.01rem solid rgb(245, 245, 245);
+}
+.partiteCoppa .partita .riposo {
+  border-top: 0.01rem solid rgb(245, 245, 245);
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .partiteCoppa .partita {
+    width: 50%;
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+}
+@media (min-width: 992px) {
+  .partiteCoppa .partita {
+    width: 33%;
+    flex: 1 1 calc(33% - 0.5rem);
+  }
+}
 .text-center {
   text-align: center;
 }

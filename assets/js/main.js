@@ -4,7 +4,6 @@ import './components/menu.js';
 import './components/header.js';
 import './components/copyright.js';
 import './components/offcanvas.js';
-import './components/classifica-order.js';
 
 
 // Codice principale

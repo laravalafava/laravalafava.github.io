@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch assets/css/main.scss:assets/css/main.css",
-    "js": "concat -o assets/js/bundle.js assets/js/components/menu.js assets/js/components/header.js assets/js/components/copyright.js assets/js/components/offcanvas.js assets/js/components/classifica-order.js"
+    "js": "concat -o assets/js/bundle.js assets/js/components/menu.js assets/js/components/header.js assets/js/components/copyright.js assets/js/components/offcanvas.js"
   },
   "keywords": [],
   "author": "",

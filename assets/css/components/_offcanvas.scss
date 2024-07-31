@@ -46,7 +46,7 @@
                 }
                 &.active {
                     a {
-                        color: $white;
+                        color: $primary;
                     }
                 }
                 &:last-child {
@@ -71,6 +71,7 @@
                 &:hover .submenu, &:focus .submenu {
                     display: flex;
                     flex-direction: column;
+                    color: $primary;
                   }
             }
         }
