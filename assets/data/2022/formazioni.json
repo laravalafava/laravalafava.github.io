@@ -1,0 +1,104 @@
+{
+    "squadre": [
+        {
+            "nome": "Real Madrink",
+            "giocatori": [
+                {"ruolo":"P","calciatore":"Meret","costo":22},
+                {"ruolo":"P","calciatore":"Sirigu","costo":1},
+                {"ruolo":"P","calciatore":"Marfella","costo":1},
+                {"ruolo":"D","calciatore":"Di Lorenzo","costo":26},
+                {"ruolo":"D","calciatore":"Skriniar","costo":26},
+                {"ruolo":"D","calciatore":"Lazzari","costo":17},
+                {"ruolo":"D","calciatore":"Singo","costo":17},
+                {"ruolo":"D","calciatore":"Kalulu","costo":17},
+                {"ruolo":"D","calciatore":"Faraoni","costo":15},
+                {"ruolo":"D","calciatore":"Valeri","costo":10},
+                {"ruolo":"D","calciatore":"De Winter","costo":5},
+                {"ruolo":"C","calciatore":"Calhanoglu","costo":30},
+                {"ruolo":"C","calciatore":"Pasalic","costo":30},
+                {"ruolo":"C","calciatore":"Malinovski","costo":25},
+                {"ruolo":"C","calciatore":"Paredes","costo":15},
+                {"ruolo":"C","calciatore":"Valoti","costo":6},
+                {"ruolo":"C","calciatore":"Fagioli","costo":2},
+                {"ruolo":"C","calciatore":"Aebiscer","costo":4},
+                {"ruolo":"C","calciatore":"Adli","costo":6},
+                {"ruolo":"A","calciatore":"Dybala","costo":104},
+                {"ruolo":"A","calciatore":"Beto","costo":32},
+                {"ruolo":"A","calciatore":"XXX","costo":0},
+                {"ruolo":"A","calciatore":"XXX","costo":0},
+                {"ruolo":"A","calciatore":"XXX","costo":0},
+                {"ruolo":"A","calciatore":"XXX","costo":0}
+            ]
+        },
+        {
+            "nome": "HannAver 23",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "YOUNG BOY",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Leptis Magna",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Montrappoli United",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "FC Bahhhhhhh",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Ambrosiana 1908",
+            "giocatori": [
+                {"ruolo":"P","calciatore":"Berisha","costo":10},
+                {"ruolo":"P","calciatore":"Gemello","costo":1},
+                {"ruolo":"P","calciatore":"Milinkovic-Savic","costo":1},
+                {"ruolo":"D","calciatore":"Bastoni","costo":19},
+                {"ruolo":"D","calciatore":"Milenkovic","costo":19},
+                {"ruolo":"D","calciatore":"Mancini","costo":14},
+                {"ruolo":"D","calciatore":"Stojanovic","costo":7},
+                {"ruolo":"D","calciatore":"Marusic","costo":6},
+                {"ruolo":"D","calciatore":"Okoli","costo":6},
+                {"ruolo":"D","calciatore":"Izzo","costo":5},
+                {"ruolo":"D","calciatore":"pezzella giu","costo":6},
+                {"ruolo":"C","calciatore":"bourabia","costo":7},
+                {"ruolo":"C","calciatore":"gyasi","costo":14},
+                {"ruolo":"C","calciatore":"pellegrini lo","costo":38},
+                {"ruolo":"C","calciatore":"pickel","costo":4},
+                {"ruolo":"C","calciatore":"amrabat","costo":14},
+                {"ruolo":"C","calciatore":"rovella","costo":4},
+                {"ruolo":"C","calciatore":"tonali","costo":24},
+                {"ruolo":"C","calciatore":"rincon","costo":6},
+                {"ruolo":"A","calciatore":"abraham","costo":153},
+                {"ruolo":"A","calciatore":"zanimacchia","costo":13},
+                {"ruolo":"A","calciatore":"XXX","costo":0},
+                {"ruolo":"A","calciatore":"XXX","costo":0},
+                {"ruolo":"A","calciatore":"XXX","costo":0},
+                {"ruolo":"A","calciatore":"XXX","costo":0}
+            ]
+        },
+        {
+            "nome": "Real Gurgugnao",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Atletico Terronya",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Ajajax Brazorf",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Montescarsini",
+            "giocatori": [ ]
+        },
+        {
+            "nome": "Armandillo FC",
+            "giocatori": [ ]
+        }
+    ]
+}

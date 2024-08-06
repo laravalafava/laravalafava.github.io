@@ -47,7 +47,7 @@
                     position: relative;
                 }
                 .growUp {
-                    background-color: rgba(144, 238, 144, 0.5);
+                    background-color: $bg-light-green;
                     &::after {
                         content: " ";
                         background-image: url('/assets/img/icons/arrow_up_green.svg');
@@ -62,7 +62,7 @@
                     }
                 }
                 .growDown {
-                    background-color: rgba(240, 128, 128, 0.5);
+                    background-color: $bg-light-red;
                     &::after {
                         content: " ";
                         background-image: url('/assets/img/icons/arrow_down_red.svg');
@@ -144,6 +144,7 @@
 
 #fullFormazioni {
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     width: 100%;
     color: $white;
@@ -295,21 +296,179 @@
                 align-items: center;
                 text-align: center;
         }
+        .bg-red {
+            background-color: $bg-light-red;
+        }
+        .bg-green {
+            background-color: $bg-light-green;
+        }
+    }
+    &.lms {
+        .partita {
+            .dettagli {
+                justify-content: center;
+                flex-direction: column;
+                .squadra {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    border-bottom: 0.01rem solid $white;
+                    padding: .5rem;
+                    &:last-child {
+                        background-color: $bg-light-red;
+                        border-bottom: none;
+                    }
+                }
+            }            
+        }
     }
 }
 @media (min-width: $tablet) {
+    #fullFormazioni {        
+        justify-content: flex-start;
+    }
     .partiteCoppa {
         .partita {
             width: 50%;
             flex: 1 1 calc(50% - 0.5rem);
         }
+        &.quarti {
+            .partita {
+                width: 50%;
+                flex: 1 1 calc(50% - 0.5rem);
+            }
+        }
     }
 }
 @media (min-width: $desktop) {
+    #fullFormazioni {        
+        justify-content: center;
+    }
     .partiteCoppa {
         .partita {
             width: 33%;
             flex: 1 1 calc(33% - 0.5rem);
+        }
+        &.quarti {
+            .partita {
+                width: 50%;
+                flex: 1 1 calc(50% - 0.5rem);
+            }
+        }
+        &.finale {
+            .partita {
+                max-width: 60%;
+                width: 60%;
+                flex: 1 1 60%;
+            }
+        }
+        
+    }
+}
+
+.classificaRoyalRumble {
+    overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+    -webkit-overflow-scrolling: touch; /* Permette uno scrolling più fluido su dispositivi touch */
+    width: 100%;
+    &::-webkit-scrollbar {
+        height: 0.3rem;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $black;
+      }
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $white;
+        border-radius: 0.5rem;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+        border-radius: 0.5rem;
+      }
+
+    .table {
+        margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $white;
+    font-size: $text;
+    font-weight: $light-weight;
+    width: 42rem;
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        .cell {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 0.01rem solid $white;
+            padding: .5rem;
+            &.bg-green {
+                background-color: $bg-light-green;
+            }
+            &.bg-red {
+                background-color: $bg-light-red;
+            }
+            &:nth-child(1) {
+                width: 3rem;
+            }
+            &:nth-child(2) {
+                width: 10rem;
+            }
+            &:nth-child(3) {
+                width: 4rem;
+            }
+            &:nth-child(4) {
+                width: 4rem;
+            }
+            &:nth-child(5) {
+                width: 4rem;
+            }
+            &:nth-child(6) {
+                width: 4rem;
+            }
+            &:nth-child(7) {
+                width: 5rem;
+            }
+            &:nth-child(8) {
+                width: 6rem;
+            }
+        }
+        &:nth-child(1) {
+            font-weight: $bold-weight;
+        }
+    }
+    }
+}
+@media (min-width: $tablet) {
+    .classificaRoyalRumble {
+        .table {
+            align-items: center;
+        .row {
+            .cell {}
+        }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .classificaRoyalRumble {
+        .row {
+            .cell {}
         }
     }
 }

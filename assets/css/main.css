@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*= = = = = = = = = = = = = */
 /*= = = = =FOOTER = = = = = */
 /*= = = = = = = = = = = = = */
@@ -418,7 +419,7 @@ main section .row {
   position: relative;
 }
 .classifica .table-container .table-wrapper table .growUp {
-  background-color: rgba(144, 238, 144, 0.5);
+  background-color: rgba(0, 128, 0, 0.3);
 }
 .classifica .table-container .table-wrapper table .growUp::after {
   content: " ";
@@ -433,7 +434,7 @@ main section .row {
   height: 1rem;
 }
 .classifica .table-container .table-wrapper table .growDown {
-  background-color: rgba(240, 128, 128, 0.5);
+  background-color: rgba(255, 0, 0, 0.3);
 }
 .classifica .table-container .table-wrapper table .growDown::after {
   content: " ";
@@ -593,6 +594,7 @@ main section .row {
 
 #fullFormazioni {
   display: flex;
+  justify-content: flex-start;
   flex-direction: row;
   width: 100%;
   color: rgb(245, 245, 245);
@@ -741,17 +743,147 @@ main section .row {
   align-items: center;
   text-align: center;
 }
+.partiteCoppa .partita .bg-red {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.partiteCoppa .partita .bg-green {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+.partiteCoppa.lms .partita .dettagli {
+  justify-content: center;
+  flex-direction: column;
+}
+.partiteCoppa.lms .partita .dettagli .squadra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.01rem solid rgb(245, 245, 245);
+  padding: 0.5rem;
+}
+.partiteCoppa.lms .partita .dettagli .squadra:last-child {
+  background-color: rgba(255, 0, 0, 0.3);
+  border-bottom: none;
+}
 
 @media (min-width: 768px) {
+  #fullFormazioni {
+    justify-content: flex-start;
+  }
   .partiteCoppa .partita {
+    width: 50%;
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+  .partiteCoppa.quarti .partita {
     width: 50%;
     flex: 1 1 calc(50% - 0.5rem);
   }
 }
 @media (min-width: 992px) {
+  #fullFormazioni {
+    justify-content: center;
+  }
   .partiteCoppa .partita {
     width: 33%;
     flex: 1 1 calc(33% - 0.5rem);
+  }
+  .partiteCoppa.quarti .partita {
+    width: 50%;
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+  .partiteCoppa.finale .partita {
+    max-width: 60%;
+    width: 60%;
+    flex: 1 1 60%;
+  }
+}
+.classificaRoyalRumble {
+  overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+  -webkit-overflow-scrolling: touch; /* Permette uno scrolling più fluido su dispositivi touch */
+  width: 100%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.classificaRoyalRumble::-webkit-scrollbar {
+  height: 0.3rem;
+}
+.classificaRoyalRumble::-webkit-scrollbar-track {
+  background: rgb(33, 33, 33);
+}
+.classificaRoyalRumble::-webkit-scrollbar-thumb {
+  background: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+}
+.classificaRoyalRumble::-webkit-scrollbar-thumb:hover {
+  background: #7b00ff;
+  border-radius: 0.5rem;
+}
+.classificaRoyalRumble .table {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgb(245, 245, 245);
+  font-size: calc(15px + 5 * (100vw - 320px) / 1600);
+  font-weight: 300;
+  width: 42rem;
+}
+.classificaRoyalRumble .table .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.classificaRoyalRumble .table .row .cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.01rem solid rgb(245, 245, 245);
+  padding: 0.5rem;
+}
+.classificaRoyalRumble .table .row .cell.bg-green {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+.classificaRoyalRumble .table .row .cell.bg-red {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.classificaRoyalRumble .table .row .cell:nth-child(1) {
+  width: 3rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(2) {
+  width: 10rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(3) {
+  width: 4rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(4) {
+  width: 4rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(5) {
+  width: 4rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(6) {
+  width: 4rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(7) {
+  width: 5rem;
+}
+.classificaRoyalRumble .table .row .cell:nth-child(8) {
+  width: 6rem;
+}
+.classificaRoyalRumble .table .row:nth-child(1) {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .classificaRoyalRumble .table {
+    align-items: center;
   }
 }
 .text-center {
